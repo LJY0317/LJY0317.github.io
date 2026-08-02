@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of Jaeyup Lee, a software engineer focused on reliable backend, full-stack, robotics, and system-integration work.">
+  <meta name="theme-color" content="#0b1118">
+  <meta property="og:title" content="Jaeyup Lee — Software Engineer">
+  <meta property="og:description" content="Backend, full-stack, robotics, and system-integration portfolio.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ljy0317.github.io/">
+  <title>Jaeyup Lee — Software Engineer</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Jaeyup Lee, home">
+        <span class="brand-mark" aria-hidden="true">JL</span>
+        <span>Jaeyup Lee</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-nav-toggle>
+        <span class="sr-only">Open navigation</span>
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation" data-nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a class="nav-cta" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="top" class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span>Software Engineer · Seoul, South Korea</p>
+          <h1>I build reliable systems across <span>robotics, data, web, and mobile.</span></h1>
+          <p class="hero-lede">
+            Junior software engineer trained at Samsung Software Academy for Youth (SSAFY),
+            with hands-on project work in ROS 2 navigation, secure external-data handling,
+            React integration, Django data automation, and Flutter/Spring Boot workflows.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">View selected work</a>
+            <a class="button button-secondary" href="mailto:leejaeyup0317@gmail.com">Email me</a>
+          </div>
+          <p class="relocation">Open to relocation to Singapore</p>
+        </div>
+
+        <aside class="hero-panel" aria-label="Engineering focus" data-reveal>
+          <p class="panel-label">Engineering focus</p>
+          <ul class="focus-list">
+            <li><span>01</span><strong>Reliable integration</strong><small>Clear boundaries between services, hardware, and external data.</small></li>
+            <li><span>02</span><strong>Defensive handling</strong><small>Validated inputs, explicit errors, secure parsing, and observable failures.</small></li>
+            <li><span>03</span><strong>Reproducible debugging</strong><small>Build checks, launch logs, diagnostics, regression tests, and documented fixes.</small></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="metrics" aria-label="Verified project metrics">
+      <div class="container metrics-grid">
+        <article><strong>4</strong><span>engineering projects</span></article>
+        <article><strong>1,000+</strong><span>ETF records automated</span></article>
+        <article><strong>3</strong><span>robot sensors integrated</span></article>
+        <article><strong>2</strong><span>timetable import paths</span></article>
+      </div>
+    </section>
+
+    <section id="about" class="section about-section">
+      <div class="container split-grid">
+        <div data-reveal>
+          <p class="section-kicker">About</p>
+          <h2>Software engineering grounded in evidence, not inflated claims.</h2>
+        </div>
+        <div class="prose" data-reveal>
+          <p>
+            My portfolio focuses on work that can be traced to my project contributions: building and debugging
+            ROS 2 simulation flows, implementing data-ingestion and visualisation features, correcting frontend
+            API assumptions and build issues, and delivering OCR-based timetable-import workflows.
+          </p>
+          <p>
+            I care about the parts of software that make systems dependable: input validation, safe external-data
+            processing, explicit failure states, testable behaviour, and clear communication across technical teams.
+            My English Language and Culture background supports professional communication in international environments.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <div>
+            <p class="section-kicker">Selected engineering projects</p>
+            <h2>What I personally contributed.</h2>
+          </div>
+          <p>Project descriptions deliberately separate my work from the wider team stack.</p>
+        </div>
+
+        <div class="project-list">
+          <article class="project-card" data-reveal>
+            <div class="project-number">01</div>
+            <div class="project-body">
+              <div class="project-topline">
+                <div>
+                  <p class="project-type">Robotics · System integration · Six-person team</p>
+                  <h3>Autonomous Greenhouse Robot & Navigation System</h3>
+                </div>
+                <time datetime="2026-02">Feb–Mar 2026</time>
+              </div>
+              <p class="project-summary">ROS 2 simulation, autonomous navigation, and operator-control interface for a greenhouse robot.</p>
+              <ul class="project-points">
+                <li>Integrated camera, LiDAR, and IMU sensors with differential drive, SLAM configuration, and map persistence.</li>
+                <li>Implemented autonomous patrol plus approach-and-return routing and tuned Nav2 for repeatable simulation runs.</li>
+                <li>Resolved Gazebo clock/odometry and localisation startup conflicts using isolated simulation sessions and a temporary map-to-odom transform.</li>
+                <li>Updated four React/TypeScript operator actions with disabled states and explicit backend status/error feedback.</li>
+              </ul>
+              <div class="tech-row" aria-label="Contribution technologies">
+                <span>Python</span><span>ROS 2</span><span>Gazebo</span><span>Nav2</span><span>SLAM</span><span>React</span><span>TypeScript</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-number">02</div>
+            <div class="project-body">
+              <div class="project-topline">
+                <div>
+                  <p class="project-type">Full-stack · Data integration · Two-person team</p>
+                  <h3>ETF Data Automation & Investment Information Platform</h3>
+                </div>
+                <time datetime="2025-10">Oct–Dec 2025</time>
+              </div>
+              <p class="project-summary">Financial-data collection, search, visualisation, external API integration, and user-facing ETF features.</p>
+              <ul class="project-points">
+                <li>Automated collection and incremental updates for more than 1,000 ETF records with Django management commands.</li>
+                <li>Used bulk inserts, uniqueness constraints, and duplicate-prevention logic for reliable ingestion.</li>
+                <li>Implemented ETF filtering, search, pagination, historical charts, and precomputed ranking data.</li>
+                <li>Integrated PyKRX, YouTube Data API, and Naver News API flows; processed gold/silver history with Pandas for Chart.js.</li>
+              </ul>
+              <div class="tech-row" aria-label="Contribution technologies">
+                <span>Python</span><span>Django</span><span>DRF</span><span>Vue.js</span><span>Pandas</span><span>PyKRX</span><span>Chart.js</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-number">03</div>
+            <div class="project-body">
+              <div class="project-topline">
+                <div>
+                  <p class="project-type">Frontend engineering · Six-person team</p>
+                  <h3>AI Study Matching & Collaboration Platform</h3>
+                </div>
+                <time datetime="2026-01">Jan–Feb 2026</time>
+              </div>
+              <p class="project-summary">Frontend integration and configuration fixes for a study-management and collaboration service.</p>
+              <ul class="project-points">
+                <li>Fixed npm build errors across three frontend files by removing stale types/functions, unused imports/state, and an unused rejection path.</li>
+                <li>Removed an incorrect recommendation helper after confirming the backend endpoint returned users rather than studies.</li>
+                <li>Removed hard-coded localhost fallbacks from two API hooks so deployments rely on the configured Vite environment variable.</li>
+              </ul>
+              <div class="tech-row" aria-label="Contribution technologies">
+                <span>React</span><span>TypeScript</span><span>TanStack Query</span><span>Axios</span><span>Vite</span><span>Git</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-number">04</div>
+            <div class="project-body">
+              <div class="project-topline">
+                <div>
+                  <p class="project-type">Full-stack timetable import · Six-person team</p>
+                  <h3>OCR-Based Cross-Platform Student Planner</h3>
+                </div>
+                <time datetime="2026">2026</time>
+              </div>
+              <p class="project-summary">Flutter and Spring Boot workflows for importing structured timetables from images and shared URLs.</p>
+              <ul class="project-points">
+                <li>Implemented two import paths: on-device image OCR and Everytime shared-URL import, including review, edit, selection, overlap checks, and bulk save.</li>
+                <li>Built a preview API with URL/identifier validation, an eight-second timeout, consistent errors, and secure XML settings that disable external entities and DOCTYPE.</li>
+                <li>Evaluated original, preprocessed, and OpenCV-enhanced image variants for OCR candidate selection.</li>
+                <li>Added diagnostic logging plus parsing, conversion, and regression tests to make failures reproducible.</li>
+              </ul>
+              <div class="tech-row" aria-label="Contribution technologies">
+                <span>Dart</span><span>Flutter</span><span>Java</span><span>Spring Boot</span><span>ML Kit</span><span>OpenCV</span><span>XML Security</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reliability-section">
+      <div class="container reliability-grid">
+        <div data-reveal>
+          <p class="section-kicker">Reliability mindset</p>
+          <h2>Making failure visible, testable, and fixable.</h2>
+        </div>
+        <div class="reliability-cards">
+          <article data-reveal><span>Validate</span><h3>Untrusted input</h3><p>URL and identifier validation, overlap checks, uniqueness constraints, and duplicate prevention.</p></article>
+          <article data-reveal><span>Protect</span><h3>External processing</h3><p>Request timeouts, secure XML parser configuration, and explicit errors instead of silent failure.</p></article>
+          <article data-reveal><span>Observe</span><h3>System behaviour</h3><p>Launch logs, TF inspection, build checks, diagnostic logs, parsing tests, and regression tests.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <div>
+            <p class="section-kicker">Technical skills</p>
+            <h2>Technologies used in my contributions.</h2>
+          </div>
+        </div>
+        <div class="skills-grid">
+          <article data-reveal><h3>Languages</h3><p>Python · Java · JavaScript / TypeScript · Dart</p></article>
+          <article data-reveal><h3>Frontend & mobile</h3><p>React · Flutter · Vue.js · Responsive UI implementation</p></article>
+          <article data-reveal><h3>Backend & APIs</h3><p>Spring Boot · Django · Django REST Framework · REST / HTTP APIs · Secure XML parsing</p></article>
+          <article data-reveal><h3>Robotics & imaging</h3><p>ROS 2 · Gazebo · Nav2 · SLAM Toolbox · RViz · ML Kit · OpenCV</p></article>
+          <article data-reveal><h3>Data & workflow</h3><p>Django ORM · Management commands · Pandas · PyKRX · Chart.js · Git</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section education-section">
+      <div class="container education-grid">
+        <div data-reveal>
+          <p class="section-kicker">Education & languages</p>
+          <h2>Technical training with an international communication foundation.</h2>
+        </div>
+        <div class="timeline" data-reveal>
+          <article>
+            <time>Jul 2025 – Jul 2026</time>
+            <h3>Samsung Software Academy for Youth (SSAFY)</h3>
+            <p>Intensive Software Engineering Programme</p>
+          </article>
+          <article>
+            <time>Mar 2015 – Aug 2024</time>
+            <h3>Hanyang University ERICA</h3>
+            <p>B.A. in English Language and Culture</p>
+          </article>
+          <article>
+            <time>Languages</time>
+            <h3>Korean · English</h3>
+            <p>Native Korean · Professional working proficiency in English</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container contact-card" data-reveal>
+        <div>
+          <p class="section-kicker">Contact</p>
+          <h2>Interested in reliable software and system integration.</h2>
+          <p>Available for software engineering opportunities and open to relocation to Singapore.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="button button-primary" href="mailto:leejaeyup0317@gmail.com">leejaeyup0317@gmail.com</a>
+          <a class="button button-secondary" href="https://github.com/LJY0317" target="_blank" rel="noreferrer">GitHub profile</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© <span data-year></span> Jaeyup Lee</p>
+      <p>Designed and built as a lightweight GitHub Pages site.</p>
+    </div>
+  </footer>
+</body>
+</html>
