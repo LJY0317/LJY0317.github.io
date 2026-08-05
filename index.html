@@ -10,9 +10,10 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://ljy0317.github.io/">
   <title>Jaeyup Lee — Software Engineer</title>
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/home.css">
+  <script src="/assets/js/main.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -20,12 +21,10 @@
   <header class="site-header" data-header>
     <div class="container header-inner">
       <a class="site-name" href="#top">Jaeyup Lee</a>
-
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-nav-toggle>
         <span class="sr-only">Open navigation</span>
         <span></span><span></span>
       </button>
-
       <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation" data-nav>
         <a href="#work">Work</a>
         <a href="#about">About</a>
@@ -41,10 +40,7 @@
       <div class="container hero-copy">
         <p class="eyebrow">Software Engineer · Seoul</p>
         <h1>Building software across robotics, data, web, and mobile.</h1>
-        <p class="hero-lede">
-          I work on the places where systems meet: robot simulation, external data,
-          frontend and backend contracts, and the handling of failure.
-        </p>
+        <p class="hero-lede">I focus on integration work: connecting components, validating assumptions, tracing failures, and making system behaviour easier to test and explain.</p>
         <div class="hero-links">
           <a href="#work">View selected work <span aria-hidden="true">↓</span></a>
           <a href="mailto:leejaeyup0317@gmail.com">Email me <span aria-hidden="true">↗</span></a>
@@ -70,290 +66,160 @@
       </div>
     </section>
 
-    <section id="work" class="section work-section">
-      <div class="container section-intro centered">
+    <section id="work" class="section">
+      <div class="container section-heading centered">
         <p class="eyebrow">Selected work</p>
-        <h2>Four projects. Four different system boundaries.</h2>
-        <p>
-          Each project below focuses on the part I worked on, the problem I faced,
-          and how the pieces were connected.
-        </p>
+        <h2>Projects explained through responsibility, problem, action, and evidence.</h2>
+        <p>Each case study separates the team product from the work I personally handled.</p>
       </div>
 
       <div class="container project-stack">
         <article class="project-panel project-robotics">
           <div class="project-copy">
-            <p class="project-meta">Robotics & system integration · Six-person team · Feb–Mar 2026</p>
-            <h3>Autonomous Greenhouse Robot & Navigation System</h3>
-            <p class="project-summary">
-              A ROS 2 simulation for greenhouse mapping, autonomous patrol,
-              route behaviour, and operator controls.
-            </p>
-
+            <p class="project-meta">Robotics & system integration · Six-person team · 2026</p>
+            <h3>Autonomous Greenhouse Robot</h3>
+            <p class="project-summary">ROS 2 and Gazebo simulation work focused on mapping, navigation behaviour, runtime integration, and operator feedback.</p>
             <dl class="project-details">
-              <div>
-                <dt>My role</dt>
-                <dd>Robot simulation, navigation flows, map handling, and control-state integration.</dd>
-              </div>
-              <div>
-                <dt>Selected work</dt>
-                <dd>
-                  <ul>
-                    <li>Integrated camera, LiDAR, and IMU sensors with differential drive and SLAM configuration.</li>
-                    <li>Implemented patrol and approach/return routing and tuned Nav2 behaviour.</li>
-                    <li>Resolved Gazebo clock, odometry, and localisation startup conflicts.</li>
-                    <li>Updated four React/TypeScript operator actions with explicit status and error states.</li>
-                  </ul>
-                </dd>
-              </div>
-              <div>
-                <dt>Tools</dt>
-                <dd>Python, ROS 2, Gazebo, Nav2, SLAM Toolbox, React, TypeScript</dd>
-              </div>
+              <div><dt>My focus</dt><dd>Robot simulation, mapping experiments, navigation flows, and integration debugging.</dd></div>
+              <div><dt>Evidence</dt><dd>Gazebo/RViz captures, a system walkthrough, and a mapping debug recording.</dd></div>
             </dl>
-          </div>
-
-          <div class="project-visual" role="img" aria-label="Diagram showing robot sensors flowing through ROS 2, mapping, navigation, and operator controls">
-            <div class="visual-caption">System flow</div>
-            <div class="flow flow-robotics">
-              <div class="flow-group sensor-group">
-                <span>Camera</span><span>LiDAR</span><span>IMU</span>
-              </div>
-              <div class="flow-arrow">→</div>
-              <div class="flow-node emphasis">ROS 2</div>
-              <div class="flow-arrow">→</div>
-              <div class="flow-stack">
-                <span>SLAM</span><span>Nav2</span><span>TF</span>
-              </div>
-              <div class="flow-arrow">→</div>
-              <div class="flow-node">Control UI</div>
+            <div class="project-actions">
+              <a class="button-link" href="/projects/greenhouse-robot/">View case study <span aria-hidden="true">→</span></a>
             </div>
-            <div class="visual-note">Sensors → localisation → route behaviour → operator feedback</div>
           </div>
+          <figure class="project-visual project-image">
+            <img
+              src="/assets/images/projects/greenhouse-robot/gazebo-greenhouse-overview-960.webp"
+              srcset="/assets/images/projects/greenhouse-robot/gazebo-greenhouse-overview-960.webp 960w, /assets/images/projects/greenhouse-robot/gazebo-greenhouse-overview-1600.webp 1600w"
+              sizes="(max-width: 980px) calc(100vw - 40px), 48vw"
+              width="2816"
+              height="1733"
+              alt="Gazebo greenhouse simulation beside an RViz mapping view"
+              loading="lazy"
+              decoding="async"
+            >
+            <figcaption>Team simulation environment and mapping context.</figcaption>
+          </figure>
         </article>
 
         <article class="project-panel project-data">
           <div class="project-copy">
-            <p class="project-meta">Full-stack & data integration · Two-person team · Oct–Dec 2025</p>
-            <h3>ETF Data Automation & Investment Information Platform</h3>
-            <p class="project-summary">
-              A financial-information service built around repeatable data collection,
-              search, ranking, and external API integration.
-            </p>
-
+            <p class="project-meta">Full-stack & data integration · Two-person team · 2025</p>
+            <h3>ETF Data Platform</h3>
+            <p class="project-summary">A financial-information project centred on repeatable data collection, search, filtering, ranking, and historical views.</p>
             <dl class="project-details">
-              <div>
-                <dt>My role</dt>
-                <dd>ETF data workflows, user-facing data views, external APIs, testing, and refactoring.</dd>
-              </div>
-              <div>
-                <dt>Selected work</dt>
-                <dd>
-                  <ul>
-                    <li>Automated incremental updates for more than 1,000 ETF records.</li>
-                    <li>Used bulk inserts, uniqueness constraints, and duplicate-prevention logic.</li>
-                    <li>Implemented filtering, search, pagination, historical charts, and ranking data.</li>
-                    <li>Integrated PyKRX, YouTube Data API, and Naver News API flows.</li>
-                  </ul>
-                </dd>
-              </div>
-              <div>
-                <dt>Tools</dt>
-                <dd>Python, Django, Django REST Framework, Vue.js, Pandas, PyKRX, Chart.js</dd>
-              </div>
+              <div><dt>My focus</dt><dd>ETF data workflows, API integration, user-facing data views, testing, and refactoring.</dd></div>
+              <div><dt>Evidence</dt><dd>Repository-backed implementation notes. No public screenshots are currently available.</dd></div>
             </dl>
+            <div class="project-actions">
+              <a class="button-link" href="/projects/etf-platform/">View case study <span aria-hidden="true">→</span></a>
+            </div>
           </div>
-
-          <div class="project-visual" role="img" aria-label="Diagram showing financial data sources flowing into Django processing and user-facing search and charts">
+          <div class="project-visual" role="img" aria-label="Data sources flowing into a Django data service and then into search, rankings, and charts">
             <div class="visual-caption">Data pipeline</div>
             <div class="data-visual">
-              <div class="source-list">
-                <span>PyKRX</span><span>YouTube API</span><span>Naver News</span>
-              </div>
-              <div class="pipeline-core">
-                <small>Collect · validate · deduplicate</small>
-                <strong>Django data service</strong>
-                <span>1,000+ ETF records</span>
-              </div>
+              <div class="source-list"><span>PyKRX</span><span>YouTube API</span><span>Naver News</span></div>
+              <div class="pipeline-core"><small>Collect · validate · deduplicate</small><strong>Django data service</strong><span>Searchable ETF records</span></div>
               <div class="output-list"><span>Search</span><span>Rankings</span><span>Charts</span></div>
-              <div class="chart" aria-hidden="true">
-                <i style="height:31%"></i><i style="height:52%"></i><i style="height:44%"></i><i style="height:76%"></i><i style="height:64%"></i><i style="height:88%"></i>
-              </div>
             </div>
           </div>
         </article>
 
         <article class="project-panel project-web">
           <div class="project-copy">
-            <p class="project-meta">Frontend engineering · Six-person team · Jan–Feb 2026</p>
-            <h3>AI Study Matching & Collaboration Platform</h3>
-            <p class="project-summary">
-              Frontend integration work focused on build reliability,
-              API assumptions, and deployment configuration.
-            </p>
-
+            <p class="project-meta">Frontend integration · Six-person team · 2026</p>
+            <h3>Study Matching Platform</h3>
+            <p class="project-summary">Targeted React and TypeScript work to restore build reliability and remove incorrect API and environment assumptions.</p>
             <dl class="project-details">
-              <div>
-                <dt>My role</dt>
-                <dd>Targeted React/TypeScript fixes on the frontend integration path.</dd>
-              </div>
-              <div>
-                <dt>Selected work</dt>
-                <dd>
-                  <ul>
-                    <li>Fixed npm build errors across three frontend files.</li>
-                    <li>Removed stale types, unused imports and state, and an unused rejection path.</li>
-                    <li>Removed a helper built on an incorrect backend-response assumption.</li>
-                    <li>Removed localhost fallbacks from two API hooks in favour of Vite environment configuration.</li>
-                  </ul>
-                </dd>
-              </div>
-              <div>
-                <dt>Tools</dt>
-                <dd>React, TypeScript, TanStack Query, Axios, Vite, Git</dd>
-              </div>
+              <div><dt>My focus</dt><dd>Build fixes, stale code removal, API-response assumptions, and Vite environment configuration.</dd></div>
+              <div><dt>Evidence</dt><dd>A privacy-safe team product screen and an engineering explanation of the corrected integration path.</dd></div>
             </dl>
-          </div>
-
-          <div class="project-visual" role="img" aria-label="Diagram showing Vite environment configuration, API hooks, typed responses, and React views">
-            <div class="visual-caption">Frontend contract</div>
-            <div class="browser-window">
-              <div class="browser-bar"><span></span><span></span><span></span></div>
-              <div class="browser-content">
-                <div class="config-row"><code>VITE_API_BASE_URL</code><b>configured</b></div>
-                <div class="contract-flow">
-                  <div>API hooks</div><span>→</span><div>typed response</div><span>→</span><div>React view</div>
-                </div>
-                <div class="check-list">
-                  <span>✓ no localhost fallback</span>
-                  <span>✓ stale code removed</span>
-                  <span>✓ build errors resolved</span>
-                </div>
-              </div>
+            <div class="project-actions">
+              <a class="button-link" href="/projects/study-platform/">View engineering note <span aria-hidden="true">→</span></a>
             </div>
           </div>
+          <figure class="project-visual project-image">
+            <img
+              src="/assets/images/projects/study-platform/study-discovery-grid-960.webp"
+              srcset="/assets/images/projects/study-platform/study-discovery-grid-960.webp 960w, /assets/images/projects/study-platform/study-discovery-grid-1600.webp 1600w"
+              sizes="(max-width: 980px) calc(100vw - 40px), 48vw"
+              width="3220"
+              height="1800"
+              alt="Togethy study discovery grid with six sample study cards"
+              loading="lazy"
+              decoding="async"
+            >
+            <figcaption>Privacy-safe crop of the team product interface.</figcaption>
+          </figure>
         </article>
 
         <article class="project-panel project-mobile">
           <div class="project-copy">
             <p class="project-meta">Full-stack timetable import · Six-person team · 2026</p>
-            <h3>OCR-Based Cross-Platform Student Planner</h3>
-            <p class="project-summary">
-              Two timetable-import paths combining Flutter review workflows,
-              image OCR, and secure backend parsing.
-            </p>
-
+            <h3>Dayori Student Planner</h3>
+            <p class="project-summary">A cross-platform academic planner with two timetable-import paths and a review workflow for structured schedule data.</p>
             <dl class="project-details">
-              <div>
-                <dt>My role</dt>
-                <dd>Flutter import flows, OCR diagnostics, and the Spring Boot preview API.</dd>
-              </div>
-              <div>
-                <dt>Selected work</dt>
-                <dd>
-                  <ul>
-                    <li>Implemented image OCR and Everytime shared-URL import paths.</li>
-                    <li>Added review, edit, selection, overlap checks, and bulk save.</li>
-                    <li>Built URL validation, an eight-second request timeout, and secure XML parser settings.</li>
-                    <li>Compared original, preprocessed, and OpenCV-enhanced OCR candidates.</li>
-                  </ul>
-                </dd>
-              </div>
-              <div>
-                <dt>Tools</dt>
-                <dd>Dart, Flutter, Java, Spring Boot, ML Kit, OpenCV, REST/HTTP, secure XML processing</dd>
-              </div>
+              <div><dt>My focus</dt><dd>Shared UI tokens and responsive UX, timetable OCR and Everytime import, and related backend APIs.</dd></div>
+              <div><dt>Evidence</dt><dd>Import screens, timetable results, product-context screens, and selected interaction recordings.</dd></div>
             </dl>
-          </div>
-
-          <div class="project-visual" role="img" aria-label="Diagram showing image or URL import, preview, review and edit, overlap checks, and bulk save">
-            <div class="visual-caption">Import workflow</div>
-            <div class="import-flow">
-              <div class="import-sources"><span>Image OCR</span><span>Shared URL</span></div>
-              <div class="import-arrow">↓</div>
-              <div class="import-step">Preview</div>
-              <div class="import-arrow">↓</div>
-              <div class="phone-frame">
-                <div class="phone-notch"></div>
-                <div class="schedule-row"><b>Mon</b><span>Data Structures</span></div>
-                <div class="schedule-row"><b>Tue</b><span>Software Project</span></div>
-                <div class="schedule-row"><b>Thu</b><span>English Seminar</span></div>
-              </div>
-              <div class="import-output"><span>Review & edit</span><span>Overlap check</span><span>Bulk save</span></div>
+            <div class="project-actions">
+              <a class="button-link" href="/projects/timetable-planner/">View case study <span aria-hidden="true">→</span></a>
             </div>
           </div>
+          <figure class="project-visual project-image">
+            <img
+              src="/assets/images/projects/timetable-planner/dayori-cover-960.webp"
+              srcset="/assets/images/projects/timetable-planner/dayori-cover-960.webp 960w, /assets/images/projects/timetable-planner/dayori-cover-1600.webp 1600w"
+              sizes="(max-width: 980px) calc(100vw - 40px), 48vw"
+              width="1920"
+              height="1080"
+              alt="Dayori project cover presenting calendar, gallery, and handwritten-note screens"
+              loading="lazy"
+              decoding="async"
+            >
+            <figcaption>Dayori team product overview; individual work is detailed in the case study.</figcaption>
+          </figure>
         </article>
       </div>
     </section>
 
     <section id="about" class="section about-section">
       <div class="container two-column">
-        <div>
-          <p class="eyebrow">About</p>
-          <h2>From language and communication to software systems.</h2>
-        </div>
+        <div><p class="eyebrow">About</p><h2>From communication studies to software systems.</h2></div>
         <div class="body-copy">
-          <p>
-            I studied English Language and Culture at Hanyang University ERICA before completing
-            intensive software engineering training at SSAFY. Across four team projects, I moved
-            between robotics, backend services, frontend integration, data workflows, and mobile development.
-          </p>
-          <p>
-            The work I enjoy most is practical and cross-functional: understanding how components fit together,
-            tracing failures across boundaries, and leaving behaviour easier to test and explain than I found it.
-          </p>
+          <p>I studied English Language and Culture at Hanyang University ERICA before completing intensive software engineering training at SSAFY.</p>
+          <p>Across team projects, I worked at the boundaries between robotics, backend services, frontend integration, data workflows, and mobile applications.</p>
         </div>
       </div>
     </section>
 
-    <section id="skills" class="section skills-section">
-      <div class="container section-intro">
-        <p class="eyebrow">Skills</p>
-        <h2>Technologies used in my project contributions.</h2>
-      </div>
-
+    <section id="skills" class="section">
+      <div class="container section-heading"><p class="eyebrow">Skills</p><h2>Technologies used in verified project contributions.</h2></div>
       <div class="container skill-table">
         <div><h3>Languages</h3><p>Python, Java, JavaScript / TypeScript, Dart</p></div>
         <div><h3>Frontend & mobile</h3><p>React, Flutter, Vue.js, responsive UI implementation</p></div>
-        <div><h3>Backend & integration</h3><p>Spring Boot, Django, Django REST Framework, REST / HTTP APIs, secure XML parsing</p></div>
+        <div><h3>Backend & integration</h3><p>Spring Boot, Django, Django REST Framework, REST / HTTP APIs, XML parsing</p></div>
         <div><h3>Robotics & imaging</h3><p>ROS 2, Gazebo, Nav2, SLAM Toolbox, RViz, ML Kit, OpenCV</p></div>
-        <div><h3>Data & workflow</h3><p>Django ORM, management commands, Pandas, PyKRX, Chart.js, Git</p></div>
       </div>
     </section>
 
     <section class="section education-section">
       <div class="container education-grid">
-        <div>
-          <p class="eyebrow">Education</p>
-          <h2>Technical training and an international communication foundation.</h2>
-        </div>
+        <div><p class="eyebrow">Education</p><h2>Technical training and an international communication foundation.</h2></div>
         <div class="education-list">
-          <article>
-            <time>Jul 2025 – Jul 2026</time>
-            <h3>Samsung Software Academy for Youth (SSAFY)</h3>
-            <p>Intensive Software Engineering Programme</p>
-          </article>
-          <article>
-            <time>Mar 2015 – Aug 2024</time>
-            <h3>Hanyang University ERICA</h3>
-            <p>B.A. in English Language and Culture</p>
-          </article>
-          <article>
-            <time>Languages</time>
-            <h3>Korean and English</h3>
-            <p>Native Korean · Professional working proficiency in English</p>
-          </article>
+          <article><time>Software engineering training</time><h3>Samsung Software Academy For Youth</h3><p>Project-based training across algorithms, web, mobile, robotics, and team development.</p></article>
+          <article><time>Bachelor's degree</time><h3>Hanyang University ERICA</h3><p>English Language and Culture.</p></article>
         </div>
       </div>
     </section>
 
-    <section class="contact-section">
+    <section class="contact-section" id="contact">
       <div class="container contact-inner">
         <p class="eyebrow">Contact</p>
-        <h2>Open to software engineering opportunities and relocation to Singapore.</h2>
+        <h2>Open to software engineering opportunities.</h2>
         <div class="contact-links">
-          <a href="mailto:leejaeyup0317@gmail.com">leejaeyup0317@gmail.com <span aria-hidden="true">↗</span></a>
-          <a href="https://github.com/LJY0317" target="_blank" rel="noreferrer">GitHub profile <span aria-hidden="true">↗</span></a>
+          <a href="mailto:leejaeyup0317@gmail.com">Email</a>
+          <a href="https://github.com/LJY0317" target="_blank" rel="noreferrer">GitHub</a>
         </div>
       </div>
     </section>
@@ -362,7 +228,7 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>© <span data-year></span> Jaeyup Lee</p>
-      <p>Software Engineer · Seoul, South Korea</p>
+      <p>Built as a lightweight static portfolio.</p>
     </div>
   </footer>
 </body>

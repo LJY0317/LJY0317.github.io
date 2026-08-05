@@ -4,11 +4,18 @@ Personal software engineering portfolio published with GitHub Pages.
 
 ## Structure
 
-- `index.html` — page content and semantic structure
-- `styles.css` — responsive editorial design
-- `script.js` — mobile navigation and current-year display
+- `index.html` — portfolio home page
+- `projects/` — evidence-focused project case studies
+- `assets/css/base.css` — shared layout, navigation, and typography
+- `assets/css/home.css` — home-page presentation
+- `assets/css/project.css` — project-page presentation
+- `assets/js/main.js` — navigation, header, media fallback, and current year
+- `assets/images/projects/` — reviewed responsive WebP project media
+- `assets/videos/projects/` — reviewed, browser-compatible project demonstrations
 - `favicon.svg` — site icon
-- `assets/` — future profile photo, project images, and CV PDF
+
+Team-project context and individual contribution are labelled separately on each
+case-study page. Only reviewed public media is stored in this repository.
 
 ## Publishing
 

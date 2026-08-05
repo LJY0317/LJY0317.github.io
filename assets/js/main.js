@@ -25,3 +25,17 @@ nav?.querySelectorAll('a').forEach((link) => {
 document.querySelectorAll('[data-year]').forEach((element) => {
   element.textContent = String(new Date().getFullYear());
 });
+
+document.querySelectorAll('[data-media]').forEach((media) => {
+  const frame = media.closest('.media-frame');
+  const markMissing = () => frame?.classList.add('is-missing');
+
+  if (media instanceof HTMLImageElement) {
+    if (media.complete && media.naturalWidth === 0) markMissing();
+    media.addEventListener('error', markMissing, { once: true });
+  }
+
+  if (media instanceof HTMLVideoElement) {
+    media.addEventListener('error', markMissing, { once: true });
+  }
+});
