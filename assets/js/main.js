@@ -36,10 +36,13 @@ const normaliseTranslationKey = (value) => value.replace(/\s+/g, ' ').trim();
 
 const getPageTranslationName = () => {
   const path = window.location.pathname.replace(/\/+$/, '') || '/';
-  if (path === '/') return 'home';
+  if (path === '/' || path === '/index.html') return 'home';
 
-  const projectName = path.split('/').filter(Boolean).at(-1);
-  return projectName || 'home';
+  const segments = path.split('/').filter(Boolean);
+  const lastSegment = segments.at(-1);
+  if (lastSegment === 'index.html') return segments.at(-2) || 'home';
+
+  return lastSegment || 'home';
 };
 
 const loadTranslations = async () => {
