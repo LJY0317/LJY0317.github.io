@@ -1,3 +1,8 @@
+const languageStylesheet = document.createElement('link');
+languageStylesheet.rel = 'stylesheet';
+languageStylesheet.href = '/assets/css/language.css';
+document.head.append(languageStylesheet);
+
 const header = document.querySelector('[data-header]');
 const navToggle = document.querySelector('[data-nav-toggle]');
 const nav = document.querySelector('[data-nav]');
