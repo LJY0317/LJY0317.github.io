@@ -1,0 +1,72 @@
+/* Language switcher */
+.language-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 2px;
+  background: var(--surface);
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  border-radius: 999px;
+}
+
+.language-switcher button {
+  min-height: 30px;
+  padding: 4px 9px;
+  color: #515154;
+  background: transparent;
+  border: 0;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 650;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.language-switcher button:hover {
+  color: #000;
+}
+
+.language-switcher button[aria-pressed="true"] {
+  color: #fff;
+  background: var(--ink);
+}
+
+.language-switcher button:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
+}
+
+html[lang="ko"] body {
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+    "Noto Sans KR", "Malgun Gothic", "Segoe UI", sans-serif;
+  word-break: keep-all;
+}
+
+html[lang="ko"] h1,
+html[lang="ko"] h2,
+html[lang="ko"] h3 {
+  letter-spacing: -0.035em;
+}
+
+html[lang="ko"] .eyebrow {
+  letter-spacing: 0.025em;
+  text-transform: none;
+}
+
+html[lang="ko"] code,
+html[lang="ko"] pre {
+  word-break: normal;
+}
+
+@media (max-width: 720px) {
+  .language-switcher {
+    align-self: flex-start;
+    margin-top: 8px;
+  }
+
+  .language-switcher button {
+    min-height: 34px;
+    padding-inline: 12px;
+    font-size: 0.78rem;
+  }
+}
