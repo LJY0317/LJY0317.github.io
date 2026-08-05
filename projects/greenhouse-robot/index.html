@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Case study of Jaeyup Lee's mapping, navigation, and integration work on a ROS 2 greenhouse robot simulation.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Autonomous Greenhouse Robot — Jaeyup Lee</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/project.css">
+  <script src="/assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="site-name" href="/">Jaeyup Lee</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-nav-toggle>
+        <span class="sr-only">Open navigation</span><span></span><span></span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation" data-nav>
+        <a href="/#work">Work</a><a href="/#about">About</a><a href="/#skills">Skills</a>
+        <a href="https://github.com/LJY0317" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="mailto:leejaeyup0317@gmail.com">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="project-hero">
+      <div class="container">
+        <nav class="project-breadcrumbs" aria-label="Breadcrumb"><a href="/">Portfolio</a><span aria-hidden="true">/</span><span>Greenhouse robot</span></nav>
+        <div class="project-hero-grid">
+          <div>
+            <p class="project-kicker">Robotics & system integration · Team project</p>
+            <h1>Autonomous Greenhouse Robot</h1>
+            <p class="project-deck">A ROS 2 and Gazebo simulation integrating robot navigation, operator controls, backend services, and greenhouse workflows. This page focuses on my mapping, navigation, and integration work.</p>
+            <div class="hero-actions"><a class="button-link" href="#evidence">View evidence</a><a class="button-link secondary" href="#responsibility">My responsibility</a></div>
+          </div>
+          <figure class="media-frame hero-media">
+            <img data-media src="/assets/images/projects/greenhouse-robot/gazebo-greenhouse-overview.png" alt="Gazebo greenhouse simulation showing the robot environment and mapping context" loading="eager" decoding="async" fetchpriority="high">
+            <div class="media-fallback">Curated greenhouse overview image is pending publication.</div>
+            <figcaption>Greenhouse simulation and mapping context. Team project environment.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="snapshot" aria-label="Project snapshot">
+      <dl class="container snapshot-grid">
+        <div><dt>Product</dt><dd>Smart-farm robot simulation and control system</dd></div>
+        <div><dt>Team</dt><dd>Six-person SSAFY project</dd></div>
+        <div><dt>My focus</dt><dd>Mapping, navigation flows, simulation, integration debugging</dd></div>
+        <div><dt>Core tools</dt><dd>ROS 2, Gazebo, Nav2, SLAM Toolbox, Python</dd></div>
+      </dl>
+    </section>
+
+    <section class="case-section surface">
+      <div class="container case-grid">
+        <div class="case-heading"><p class="eyebrow">Context</p><h2>What the team built</h2></div>
+        <div class="case-body">
+          <p>The team product combined a ROS 2 robot workspace, a FastAPI backend, a React operator interface, PostgreSQL, and MQTT. The broader system included patrol and movement scenarios, diagnosis and harvest flows, stored decision history, and operator monitoring.</p>
+          <div class="scope-note"><strong>Scope boundary</strong>The dashboard, diagnosis screens, database model, and full system walkthrough are shown as team-project context. They are not presented as interfaces or features designed solely by me.</div>
+          <div class="workflow" aria-label="High-level system flow"><div>Sensors & simulation</div><div>ROS 2 runtime</div><div>Mapping & navigation</div><div>Backend integration</div><div>Operator feedback</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section" id="responsibility">
+      <div class="container case-grid">
+        <div class="case-heading"><p class="eyebrow">Responsibility</p><h2>What I worked on</h2></div>
+        <div class="case-body">
+          <p>My work centred on the robot simulation and navigation path: preparing mapping experiments, handling map-related runtime behaviour, connecting navigation flows, and diagnosing integration problems between Gazebo, ROS 2 state, and operator-facing behaviour.</p>
+          <h3>Problem</h3>
+          <p>Simulation and navigation components can appear to start successfully while still disagreeing about time, transforms, odometry, localisation state, or map lifecycle. Those failures are difficult to explain from the interface alone.</p>
+          <h3>Action</h3>
+          <ul>
+            <li>Ran lower-load world and mapping experiments to isolate simulation and map behaviour.</li>
+            <li>Checked Gazebo, RViz, transforms, odometry, and localisation startup as one connected runtime path.</li>
+            <li>Worked on navigation flows and operator-state integration rather than treating each component as an isolated demo.</li>
+          </ul>
+          <h3>Result</h3>
+          <p>The final project repository documents a verified end-to-end demonstration covering the frontend, robot state, diagnosis, harvest completion, and supporting APIs. The media below separates that team-level demonstration from my own mapping-debug evidence.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section surface" id="evidence">
+      <div class="container case-grid">
+        <div class="case-heading"><p class="eyebrow">Evidence</p><h2>Runtime and iteration</h2></div>
+        <div class="case-body">
+          <div class="evidence-grid">
+            <figure class="media-frame">
+              <img data-media src="/assets/images/projects/greenhouse-robot/rviz-mapping-attempt.png" alt="Gazebo and RViz windows during a greenhouse mapping experiment performed by Jaeyup Lee" loading="lazy" decoding="async" sizes="(max-width: 720px) 100vw, 50vw">
+              <div class="media-fallback">Mapping experiment image is pending publication.</div>
+              <figcaption>Gazebo/RViz mapping attempt from my simulation and mapping work.</figcaption>
+            </figure>
+            <figure class="media-frame">
+              <img data-media src="/assets/images/projects/greenhouse-robot/operator-dashboard-overview.png" alt="Team operator dashboard showing greenhouse robot monitoring information" loading="lazy" decoding="async" sizes="(max-width: 720px) 100vw, 50vw">
+              <div class="media-fallback">Operator dashboard image is pending publication.</div>
+              <figcaption>Team operator dashboard, included to show the system context around the robot runtime.</figcaption>
+            </figure>
+            <div class="video-card wide">
+              <h3>Mapping debug session</h3>
+              <p>A four-times-speed recording of my low-load world and map experiment. This is the strongest direct media evidence for my contribution.</p>
+              <video data-media controls playsinline preload="metadata" poster="/assets/images/projects/greenhouse-robot/rviz-mapping-attempt.png">
+                <source src="/assets/videos/projects/greenhouse-robot/mapping-debug-session.mp4" type="video/mp4">
+                Your browser does not support the video element.
+              </video>
+            </div>
+            <div class="video-card wide">
+              <h3>Full system demonstration</h3>
+              <p>Team-project overview covering mapping, navigation, diagnosis, and harvesting. It demonstrates the integrated product, not my individual ownership of every visible feature.</p>
+              <video data-media controls playsinline preload="metadata" poster="/assets/images/projects/greenhouse-robot/gazebo-greenhouse-overview.png">
+                <source src="/assets/videos/projects/greenhouse-robot/system-demo.mp4" type="video/mp4">
+                Your browser does not support the video element.
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="container case-grid">
+        <div class="case-heading"><p class="eyebrow">Broader system</p><h2>Team context</h2></div>
+        <div class="case-body">
+          <div class="evidence-grid">
+            <figure class="media-frame"><img data-media src="/assets/images/projects/greenhouse-robot/operator-dashboard-tablet.png" alt="Tablet-sized team control interface for the greenhouse robot system" loading="lazy" decoding="async"><div class="media-fallback">Tablet dashboard image is pending publication.</div><figcaption>Tablet-sized team control interface. Team-project context.</figcaption></figure>
+            <figure class="media-frame"><img data-media src="/assets/images/projects/greenhouse-robot/plant-diagnosis-modal.png" alt="Team interface showing a plant diagnosis result and related control flow" loading="lazy" decoding="async"><div class="media-fallback">Diagnosis image is pending publication.</div><figcaption>Plant diagnosis result and control flow. Team-project context.</figcaption></figure>
+            <figure class="media-frame wide"><img data-media src="/assets/images/projects/greenhouse-robot/system-data-model.png" alt="Entity relationship diagram for the greenhouse robot project's data model" loading="lazy" decoding="async"><div class="media-fallback">System data model image is pending publication.</div><figcaption>Final project data model, shown as architecture context rather than personal implementation evidence.</figcaption></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="project-navigation" aria-label="Project navigation">
+      <div class="container project-navigation-inner"><a href="/">← Back to portfolio</a><a href="/projects/etf-platform/">Next: ETF data platform →</a></div>
+    </nav>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><p>© <span data-year></span> Jaeyup Lee</p><p>Project evidence is labelled by ownership and context.</p></div></footer>
+</body>
+</html>
