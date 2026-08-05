@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Engineering note on Jaeyup Lee's frontend integration fixes for the Togethy study platform.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Study Matching Platform — Jaeyup Lee</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/project.css">
+  <script src="/assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" data-header><div class="container header-inner"><a class="site-name" href="/">Jaeyup Lee</a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-nav-toggle><span class="sr-only">Open navigation</span><span></span><span></span></button><nav id="primary-nav" class="primary-nav" aria-label="Primary navigation" data-nav><a href="/#work">Work</a><a href="/#about">About</a><a href="/#skills">Skills</a><a href="https://github.com/LJY0317" target="_blank" rel="noreferrer">GitHub</a><a href="mailto:leejaeyup0317@gmail.com">Contact</a></nav></div></header>
+
+  <main id="main">
+    <section class="project-hero"><div class="container"><nav class="project-breadcrumbs" aria-label="Breadcrumb"><a href="/">Portfolio</a><span aria-hidden="true">/</span><span>Study platform</span></nav><div class="project-hero-grid"><div><p class="project-kicker">Frontend integration · Team project</p><h1>Study Matching Platform</h1><p class="project-deck">Togethy was a broad study-management and collaboration platform. My contribution was narrower: targeted React and TypeScript fixes on the frontend integration path.</p><div class="hero-actions"><a class="button-link" href="#responsibility">Read engineering note</a><a class="button-link secondary" href="#context">View product context</a></div></div><figure class="media-frame hero-media"><img data-media src="/assets/images/projects/study-platform/study-discovery-grid.png" alt="Togethy study discovery page showing a grid of available study groups" loading="eager" decoding="async" fetchpriority="high"><div class="media-fallback">Curated study discovery image is pending publication.</div><figcaption>Study discovery interface. Team-project context; the visible UI is not presented as my sole design or implementation.</figcaption></figure></div></div></section>
+
+    <section class="snapshot" aria-label="Project snapshot"><dl class="container snapshot-grid"><div><dt>Product</dt><dd>Study matching and collaboration platform</dd></div><div><dt>Team</dt><dd>Six-person SSAFY project</dd></div><div><dt>My focus</dt><dd>Build reliability and frontend API configuration</dd></div><div><dt>Core tools</dt><dd>React, TypeScript, Axios, TanStack Query, Vite</dd></div></dl></section>
+
+    <section class="case-section surface" id="context"><div class="container case-grid"><div class="case-heading"><p class="eyebrow">Context</p><h2>What the team built</h2></div><div class="case-body"><p>The team project covered study recommendation, study management, video meetings, meeting summaries, documents, notifications, OAuth, and backend services. This page does not attribute those full-product features to me.</p><div class="scope-note"><strong>Scope boundary</strong>The discovery-grid screenshot is the only selected privacy-safe product image. Meeting and chat screenshots were intentionally excluded because they exposed participant faces and personal text.</div></div></div></section>
+
+    <section class="case-section" id="responsibility"><div class="container case-grid"><div class="case-heading"><p class="eyebrow">Engineering note</p><h2>Correcting the frontend integration path</h2></div><div class="case-body"><h3>Problem</h3><p>The frontend had build failures and integration assumptions that made deployment behaviour less reliable. Some stale code paths were no longer used, one helper assumed a backend response shape that was not valid, and API hooks contained localhost fallbacks instead of relying on the configured Vite environment.</p><h3>Action</h3><ul><li>Fixed npm build errors across three frontend files.</li><li>Removed stale types, unused imports and state, and an unused rejection path.</li><li>Removed a helper built on an incorrect backend-response assumption.</li><li>Removed localhost fallbacks from two API hooks and used Vite environment configuration instead.</li></ul><h3>Result</h3><p>The result was a cleaner build path and a more explicit API base configuration. The evidence for this contribution is the corrected integration logic and build outcome, rather than a claim of ownership over the full Togethy product.</p><div class="workflow" aria-label="Corrected frontend integration flow"><div>Vite environment</div><div>Configured API base</div><div>Query or API hook</div><div>Typed response</div><div>React view</div></div><pre class="code-evidence" aria-label="Conceptual configuration flow"><code>VITE_API_BASE_URL
+        ↓
+shared API configuration
+        ↓
+feature query hooks
+        ↓
+typed frontend state</code></pre><p class="media-note">This diagram is a conceptual summary of the verified fix categories, not a verbatim copy of private team source code.</p></div></div></section>
+
+    <section class="case-section surface"><div class="container case-grid"><div class="case-heading"><p class="eyebrow">Demo decision</p><h2>Why the interactive demo comes later</h2></div><div class="case-body"><p>A simulated study-matching demo could be added under <code>/demos/togethy/</code>, but it would demonstrate a recreated product flow rather than the integration fixes that define my verified contribution. The higher-priority work is therefore:</p><ol><li>Publish this evidence-based engineering note.</li><li>Complete the robot and timetable pages with curated media.</li><li>Only then add a clearly labelled sample-data Togethy demo if it improves the portfolio without implying ownership of team features.</li></ol><div class="scope-note"><strong>Future demo disclosure</strong>Any Togethy demo should say that it is an independently recreated, sample-data portfolio demonstration with no original authentication, AI, meeting, or production backend connection.</div></div></div></section>
+
+    <nav class="project-navigation" aria-label="Project navigation"><div class="container project-navigation-inner"><a href="/projects/etf-platform/">← Previous: ETF data platform</a><a href="/projects/timetable-planner/">Next: Dayori student planner →</a></div></nav>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><p>© <span data-year></span> Jaeyup Lee</p><p>Product context and individual contribution are separated.</p></div></footer>
+</body>
+</html>
