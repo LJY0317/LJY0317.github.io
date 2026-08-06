@@ -16,22 +16,22 @@
   <link rel="stylesheet" href="/assets/css/home.css">
   <script src="/assets/js/main.js" defer></script>
 </head>
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
+<body data-page="home">
+  <a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to content</a>
 
   <header class="site-header" data-header>
     <div class="container header-inner">
       <a class="site-name" href="#top">Jaeyup Lee</a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-nav-toggle>
-        <span class="sr-only">Open navigation</span>
+        <span class="sr-only" data-nav-toggle-label>Open navigation</span>
         <span></span><span></span>
       </button>
-      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation" data-nav>
-        <a href="#work">Work</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation" data-i18n-aria-label="a11y.primaryNav" data-nav>
+        <a href="#work" data-i18n="nav.work">Work</a>
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#skills" data-i18n="nav.skills">Skills</a>
         <a href="https://github.com/LJY0317" target="_blank" rel="noreferrer">GitHub</a>
-        <a href="mailto:leejaeyup0317@gmail.com">Contact</a>
+        <a href="mailto:leejaeyup0317@gmail.com" data-i18n="nav.contact">Contact</a>
       </nav>
     </div>
   </header>
@@ -39,24 +39,24 @@
   <main id="main">
     <section id="top" class="hero">
       <div class="container hero-copy">
-        <p class="eyebrow">Software Engineer · Seoul</p>
-        <h1>Building software across robotics, data, web, and mobile.</h1>
-        <p class="hero-lede">I focus on integration work: connecting components, validating assumptions, tracing failures, and making system behaviour easier to test and explain.</p>
+        <p class="eyebrow" data-i18n="home.hero.eyebrow">Software Engineer · Seoul</p>
+        <h1 data-i18n="home.hero.title">Building software across robotics, data, web, and mobile.</h1>
+        <p class="hero-lede" data-i18n="home.hero.lede">I focus on integration work: connecting components, validating assumptions, tracing failures, and making system behaviour easier to test and explain.</p>
         <div class="hero-links">
-          <a href="#work">View selected work <span aria-hidden="true">↓</span></a>
-          <a href="mailto:leejaeyup0317@gmail.com">Email me <span aria-hidden="true">↗</span></a>
+          <a href="#work"><span data-i18n="home.hero.workLink">View selected work</span> <span aria-hidden="true">↓</span></a>
+          <a href="mailto:leejaeyup0317@gmail.com"><span data-i18n="home.hero.emailLink">Email me</span> <span aria-hidden="true">↗</span></a>
         </div>
       </div>
 
-      <div class="container hero-stage" aria-label="Areas of engineering work">
-        <div class="stage-label stage-label-robotics">Robotics</div>
-        <div class="stage-label stage-label-data">Data</div>
-        <div class="stage-label stage-label-web">Web</div>
-        <div class="stage-label stage-label-mobile">Mobile</div>
+      <div class="container hero-stage" aria-label="Areas of engineering work" data-i18n-aria-label="home.stage.aria">
+        <div class="stage-label stage-label-robotics" data-i18n="home.stage.robotics">Robotics</div>
+        <div class="stage-label stage-label-data" data-i18n="home.stage.data">Data</div>
+        <div class="stage-label stage-label-web" data-i18n="home.stage.web">Web</div>
+        <div class="stage-label stage-label-mobile" data-i18n="home.stage.mobile">Mobile</div>
         <div class="stage-core">
-          <span>Integration</span>
-          <strong>Reliable systems</strong>
-          <small>Validation · Debugging · Observable failures</small>
+          <span data-i18n="home.stage.integration">Integration</span>
+          <strong data-i18n="home.stage.reliable">Reliable systems</strong>
+          <small data-i18n="home.stage.detail">Validation · Debugging · Observable failures</small>
         </div>
         <svg class="stage-lines" viewBox="0 0 1000 500" aria-hidden="true" preserveAspectRatio="none">
           <path d="M220 110 C350 120 350 215 450 240"/>
@@ -69,23 +69,23 @@
 
     <section id="work" class="section">
       <div class="container section-heading centered">
-        <p class="eyebrow">Selected work</p>
-        <h2>Projects explained through responsibility, problem, action, and evidence.</h2>
-        <p>Each case study separates the team product from the work I personally handled.</p>
+        <p class="eyebrow" data-i18n="home.work.eyebrow">Selected work</p>
+        <h2 data-i18n="home.work.title">Projects explained through responsibility, problem, action, and evidence.</h2>
+        <p data-i18n="home.work.intro">Each case study separates the team product from the work I personally handled.</p>
       </div>
 
       <div class="container project-stack">
         <article class="project-panel project-robotics">
           <div class="project-copy">
-            <p class="project-meta">Robotics & system integration · Six-person team · 2026</p>
-            <h3>Autonomous Greenhouse Robot</h3>
-            <p class="project-summary">ROS 2 and Gazebo simulation work focused on mapping, navigation behaviour, runtime integration, and operator feedback.</p>
+            <p class="project-meta" data-i18n="home.card.greenhouse.meta">Robotics & system integration · Six-person team · 2026</p>
+            <h3 data-i18n="home.card.greenhouse.title">Autonomous Greenhouse Robot</h3>
+            <p class="project-summary" data-i18n="home.card.greenhouse.summary">ROS 2 and Gazebo simulation work focused on mapping, navigation behaviour, runtime integration, and operator feedback.</p>
             <dl class="project-details">
-              <div><dt>My focus</dt><dd>Robot simulation, mapping experiments, navigation flows, and integration debugging.</dd></div>
-              <div><dt>Evidence</dt><dd>Gazebo/RViz captures, a system walkthrough, and a mapping debug recording.</dd></div>
+              <div><dt data-i18n="common.myFocus">My focus</dt><dd data-i18n="home.card.greenhouse.focus">Robot simulation, mapping experiments, navigation flows, and integration debugging.</dd></div>
+              <div><dt data-i18n="common.evidence">Evidence</dt><dd data-i18n="home.card.greenhouse.evidence">Gazebo/RViz captures, a system walkthrough, and a mapping debug recording.</dd></div>
             </dl>
             <div class="project-actions">
-              <a class="button-link" href="/projects/greenhouse-robot/">View case study <span aria-hidden="true">→</span></a>
+              <a class="button-link" href="/projects/greenhouse-robot/"><span data-i18n="home.card.greenhouse.link">View case study</span> <span aria-hidden="true">→</span></a>
             </div>
           </div>
           <figure class="project-visual project-image">
@@ -95,48 +95,48 @@
               sizes="(max-width: 980px) calc(100vw - 40px), 48vw"
               width="2816"
               height="1733"
-              alt="Gazebo greenhouse simulation beside an RViz mapping view"
+              alt="Gazebo greenhouse simulation beside an RViz mapping view" data-i18n-alt="home.card.greenhouse.alt"
               loading="lazy"
               decoding="async"
             >
-            <figcaption>Team simulation environment and mapping context.</figcaption>
+            <figcaption data-i18n="home.card.greenhouse.caption">Team simulation environment and mapping context.</figcaption>
           </figure>
         </article>
 
         <article class="project-panel project-data">
           <div class="project-copy">
-            <p class="project-meta">Full-stack & data integration · Two-person team · 2025</p>
-            <h3>ETF Data Platform</h3>
-            <p class="project-summary">A financial-information project centred on repeatable data collection, search, filtering, ranking, and historical views.</p>
+            <p class="project-meta" data-i18n="home.card.etf.meta">Full-stack & data integration · Two-person team · 2025</p>
+            <h3 data-i18n="home.card.etf.title">ETF Data Platform</h3>
+            <p class="project-summary" data-i18n="home.card.etf.summary">A financial-information project centred on repeatable data collection, search, filtering, ranking, and historical views.</p>
             <dl class="project-details">
-              <div><dt>My focus</dt><dd>ETF data workflows, API integration, user-facing data views, testing, and refactoring.</dd></div>
-              <div><dt>Evidence</dt><dd>Repository-backed implementation notes. No public screenshots are currently available.</dd></div>
+              <div><dt data-i18n="common.myFocus">My focus</dt><dd data-i18n="home.card.etf.focus">ETF data workflows, API integration, user-facing data views, testing, and refactoring.</dd></div>
+              <div><dt data-i18n="common.evidence">Evidence</dt><dd data-i18n="home.card.etf.evidence">Repository-backed implementation notes. No public screenshots are currently available.</dd></div>
             </dl>
             <div class="project-actions">
-              <a class="button-link" href="/projects/etf-platform/">View case study <span aria-hidden="true">→</span></a>
+              <a class="button-link" href="/projects/etf-platform/"><span data-i18n="home.card.etf.link">View case study</span> <span aria-hidden="true">→</span></a>
             </div>
           </div>
-          <div class="project-visual" role="img" aria-label="Data sources flowing into a Django data service and then into search, rankings, and charts">
-            <div class="visual-caption">Data pipeline</div>
+          <div class="project-visual" role="img" aria-label="Data sources flowing into a Django data service and then into search, rankings, and charts" data-i18n-aria-label="home.card.etf.aria">
+            <div class="visual-caption" data-i18n="home.card.etf.pipeline">Data pipeline</div>
             <div class="data-visual">
               <div class="source-list"><span>PyKRX</span><span>YouTube API</span><span>Naver News</span></div>
-              <div class="pipeline-core"><small>Collect · validate · deduplicate</small><strong>Django data service</strong><span>Searchable ETF records</span></div>
-              <div class="output-list"><span>Search</span><span>Rankings</span><span>Charts</span></div>
+              <div class="pipeline-core"><small data-i18n="home.card.etf.collect">Collect · validate · deduplicate</small><strong data-i18n="home.card.etf.service">Django data service</strong><span data-i18n="home.card.etf.records">Searchable ETF records</span></div>
+              <div class="output-list"><span data-i18n="home.card.etf.search">Search</span><span data-i18n="home.card.etf.rankings">Rankings</span><span data-i18n="home.card.etf.charts">Charts</span></div>
             </div>
           </div>
         </article>
 
         <article class="project-panel project-web">
           <div class="project-copy">
-            <p class="project-meta">Frontend integration · Six-person team · 2026</p>
-            <h3>Study Matching Platform</h3>
-            <p class="project-summary">Targeted React and TypeScript work to restore build reliability and remove incorrect API and environment assumptions.</p>
+            <p class="project-meta" data-i18n="home.card.study.meta">Frontend integration · Six-person team · 2026</p>
+            <h3 data-i18n="home.card.study.title">Study Matching Platform</h3>
+            <p class="project-summary" data-i18n="home.card.study.summary">Targeted React and TypeScript work to restore build reliability and remove incorrect API and environment assumptions.</p>
             <dl class="project-details">
-              <div><dt>My focus</dt><dd>Build fixes, stale code removal, API-response assumptions, and Vite environment configuration.</dd></div>
-              <div><dt>Evidence</dt><dd>A privacy-safe team product screen and an engineering explanation of the corrected integration path.</dd></div>
+              <div><dt data-i18n="common.myFocus">My focus</dt><dd data-i18n="home.card.study.focus">Build fixes, stale code removal, API-response assumptions, and Vite environment configuration.</dd></div>
+              <div><dt data-i18n="common.evidence">Evidence</dt><dd data-i18n="home.card.study.evidence">A privacy-safe team product screen and an engineering explanation of the corrected integration path.</dd></div>
             </dl>
             <div class="project-actions">
-              <a class="button-link" href="/projects/study-platform/">View engineering note <span aria-hidden="true">→</span></a>
+              <a class="button-link" href="/projects/study-platform/"><span data-i18n="home.card.study.link">View engineering note</span> <span aria-hidden="true">→</span></a>
             </div>
           </div>
           <figure class="project-visual project-image">
@@ -146,25 +146,25 @@
               sizes="(max-width: 980px) calc(100vw - 40px), 48vw"
               width="3220"
               height="1800"
-              alt="Togethy study discovery grid with six sample study cards"
+              alt="Togethy study discovery grid with six sample study cards" data-i18n-alt="home.card.study.alt"
               loading="lazy"
               decoding="async"
             >
-            <figcaption>Privacy-safe crop of the team product interface.</figcaption>
+            <figcaption data-i18n="home.card.study.caption">Privacy-safe crop of the team product interface.</figcaption>
           </figure>
         </article>
 
         <article class="project-panel project-mobile">
           <div class="project-copy">
-            <p class="project-meta">Full-stack timetable import · Six-person team · 2026</p>
-            <h3>Dayori Student Planner</h3>
-            <p class="project-summary">A cross-platform academic planner with two timetable-import paths and a review workflow for structured schedule data.</p>
+            <p class="project-meta" data-i18n="home.card.dayori.meta">Full-stack timetable import · Six-person team · 2026</p>
+            <h3 data-i18n="home.card.dayori.title">Dayori Student Planner</h3>
+            <p class="project-summary" data-i18n="home.card.dayori.summary">A cross-platform academic planner with two timetable-import paths and a review workflow for structured schedule data.</p>
             <dl class="project-details">
-              <div><dt>My focus</dt><dd>Shared UI tokens and responsive UX, timetable OCR and Everytime import, and related backend APIs.</dd></div>
-              <div><dt>Evidence</dt><dd>Import screens, timetable results, product-context screens, and selected interaction recordings.</dd></div>
+              <div><dt data-i18n="common.myFocus">My focus</dt><dd data-i18n="home.card.dayori.focus">Shared UI tokens and responsive UX, timetable OCR and Everytime import, and related backend APIs.</dd></div>
+              <div><dt data-i18n="common.evidence">Evidence</dt><dd data-i18n="home.card.dayori.evidence">Import screens, timetable results, product-context screens, and selected interaction recordings.</dd></div>
             </dl>
             <div class="project-actions">
-              <a class="button-link" href="/projects/timetable-planner/">View case study <span aria-hidden="true">→</span></a>
+              <a class="button-link" href="/projects/timetable-planner/"><span data-i18n="home.card.dayori.link">View case study</span> <span aria-hidden="true">→</span></a>
             </div>
           </div>
           <figure class="project-visual project-image">
@@ -174,11 +174,11 @@
               sizes="(max-width: 980px) calc(100vw - 40px), 48vw"
               width="1920"
               height="1080"
-              alt="Dayori project cover presenting calendar, gallery, and handwritten-note screens"
+              alt="Dayori project cover presenting calendar, gallery, and handwritten-note screens" data-i18n-alt="home.card.dayori.alt"
               loading="lazy"
               decoding="async"
             >
-            <figcaption>Dayori team product overview; individual work is detailed in the case study.</figcaption>
+            <figcaption data-i18n="home.card.dayori.caption">Dayori team product overview; individual work is detailed in the case study.</figcaption>
           </figure>
         </article>
       </div>
@@ -186,40 +186,40 @@
 
     <section id="about" class="section about-section">
       <div class="container two-column">
-        <div><p class="eyebrow">About</p><h2>From communication studies to software systems.</h2></div>
+        <div><p class="eyebrow" data-i18n="home.about.eyebrow">About</p><h2 data-i18n="home.about.title">From communication studies to software systems.</h2></div>
         <div class="body-copy">
-          <p>I studied English Language and Culture at Hanyang University ERICA before completing intensive software engineering training at SSAFY.</p>
-          <p>Across team projects, I worked at the boundaries between robotics, backend services, frontend integration, data workflows, and mobile applications.</p>
+          <p data-i18n="home.about.education">I studied English Language and Culture at Hanyang University ERICA before completing intensive software engineering training at SSAFY.</p>
+          <p data-i18n="home.about.work">Across team projects, I worked at the boundaries between robotics, backend services, frontend integration, data workflows, and mobile applications.</p>
         </div>
       </div>
     </section>
 
     <section id="skills" class="section">
-      <div class="container section-heading"><p class="eyebrow">Skills</p><h2>Technologies used in verified project contributions.</h2></div>
+      <div class="container section-heading"><p class="eyebrow" data-i18n="home.skills.eyebrow">Skills</p><h2 data-i18n="home.skills.title">Technologies used in verified project contributions.</h2></div>
       <div class="container skill-table">
-        <div><h3>Languages</h3><p>Python, Java, JavaScript / TypeScript, Dart</p></div>
-        <div><h3>Frontend & mobile</h3><p>React, Flutter, Vue.js, responsive UI implementation</p></div>
-        <div><h3>Backend & integration</h3><p>Spring Boot, Django, Django REST Framework, REST / HTTP APIs, XML parsing</p></div>
-        <div><h3>Robotics & imaging</h3><p>ROS 2, Gazebo, Nav2, SLAM Toolbox, RViz, ML Kit, OpenCV</p></div>
+        <div><h3 data-i18n="home.skills.languages">Languages</h3><p>Python, Java, JavaScript / TypeScript, Dart</p></div>
+        <div><h3 data-i18n="home.skills.frontend">Frontend & mobile</h3><p data-i18n="home.skills.frontendList">React, Flutter, Vue.js, responsive UI implementation</p></div>
+        <div><h3 data-i18n="home.skills.backend">Backend & integration</h3><p data-i18n="home.skills.backendList">Spring Boot, Django, Django REST Framework, REST / HTTP APIs, XML parsing</p></div>
+        <div><h3 data-i18n="home.skills.robotics">Robotics & imaging</h3><p>ROS 2, Gazebo, Nav2, SLAM Toolbox, RViz, ML Kit, OpenCV</p></div>
       </div>
     </section>
 
     <section class="section education-section">
       <div class="container education-grid">
-        <div><p class="eyebrow">Education</p><h2>Technical training and an international communication foundation.</h2></div>
+        <div><p class="eyebrow" data-i18n="home.education.eyebrow">Education</p><h2 data-i18n="home.education.title">Technical training and an international communication foundation.</h2></div>
         <div class="education-list">
-          <article><time>Software engineering training</time><h3>Samsung Software Academy For Youth</h3><p>Project-based training across algorithms, web, mobile, robotics, and team development.</p></article>
-          <article><time>Bachelor's degree</time><h3>Hanyang University ERICA</h3><p>English Language and Culture.</p></article>
+          <article><time data-i18n="home.education.ssafyType">Software engineering training</time><h3 data-i18n="home.education.ssafyName">Samsung Software Academy For Youth</h3><p data-i18n="home.education.ssafyDetail">Project-based training across algorithms, web, mobile, robotics, and team development.</p></article>
+          <article><time data-i18n="home.education.degreeType">Bachelor's degree</time><h3>Hanyang University ERICA</h3><p data-i18n="home.education.degreeDetail">English Language and Culture.</p></article>
         </div>
       </div>
     </section>
 
     <section class="contact-section" id="contact">
       <div class="container contact-inner">
-        <p class="eyebrow">Contact</p>
-        <h2>Open to software engineering opportunities.</h2>
+        <p class="eyebrow" data-i18n="home.contact.eyebrow">Contact</p>
+        <h2 data-i18n="home.contact.title">Open to software engineering opportunities.</h2>
         <div class="contact-links">
-          <a href="mailto:leejaeyup0317@gmail.com">Email</a>
+          <a href="mailto:leejaeyup0317@gmail.com" data-i18n="common.email">Email</a>
           <a href="https://github.com/LJY0317" target="_blank" rel="noreferrer">GitHub</a>
         </div>
       </div>
@@ -229,7 +229,7 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>© <span data-year></span> Jaeyup Lee</p>
-      <p>Built as a lightweight static portfolio.</p>
+      <p data-i18n="home.footer.note">Built as a lightweight static portfolio.</p>
     </div>
   </footer>
 </body>
