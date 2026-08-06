@@ -106,7 +106,8 @@
   stroke-dasharray: 5 8;
 }
 
-.project-stack { display: grid; gap: 34px; margin-top: 64px; }
+#work.section { padding-top: 88px; }
+.project-stack { display: grid; gap: 34px; margin-top: 48px; }
 .project-panel {
   --project-accent: #387d62;
   display: grid;
@@ -405,6 +406,8 @@
 }
 
 @media (max-width: 720px) {
+  #work.section { padding-top: 82px; }
+  .project-stack { margin-top: 56px; }
   .hero { padding: 76px 0 48px; }
   .hero h1 { font-size: clamp(2.8rem, 14vw, 4.5rem); }
   .hero-lede { margin-top: 22px; font-size: 1.05rem; }
