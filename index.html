@@ -3,233 +3,150 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Portfolio of Jaeyup Lee, a software engineer working across robotics, backend integration, data systems, web, and mobile applications.">
-  <meta name="theme-color" content="#ffffff">
-  <meta property="og:title" content="Jaeyup Lee — Software Engineer">
-  <meta property="og:description" content="Selected software engineering work across robotics, data systems, web, and mobile applications.">
+  <meta name="description" content="Jaeyup Lee — software engineer. Selected work in macOS tools, native apps, robotics, and interactive products.">
+  <meta name="theme-color" content="#fdfdfb">
   <meta property="og:type" content="website">
+  <meta property="og:title" content="Jaeyup Lee — Software Engineer">
+  <meta property="og:description" content="Selected projects, real demos, and engineering notes.">
+  <meta property="og:image" content="https://ljy0317.github.io/assets/media/pawpaw-workshop.webp">
   <meta property="og:url" content="https://ljy0317.github.io/">
   <link rel="canonical" href="https://ljy0317.github.io/">
   <title>Jaeyup Lee — Software Engineer</title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/assets/css/base.css">
-  <link rel="stylesheet" href="/assets/css/home.css">
+  <link rel="stylesheet" href="/assets/css/showcase.css">
   <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/showcase.js" defer></script>
 </head>
-<body data-page="home">
+<body data-page="home" class="studio">
   <a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to content</a>
-
-  <header class="site-header" data-header>
+  <header class="site-header studio-header" data-header>
     <div class="container header-inner">
-      <a class="site-name" href="#top">Jaeyup Lee</a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-nav-toggle>
-        <span class="sr-only" data-nav-toggle-label>Open navigation</span>
-        <span></span><span></span>
-      </button>
-      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation" data-i18n-aria-label="a11y.primaryNav" data-nav>
+      <a class="site-name" href="#top">Jaeyup Lee<span class="brand-point">.</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-nav-toggle><span class="sr-only" data-nav-toggle-label>Open navigation</span><span></span><span></span></button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation" data-i18n-aria-label="a11y.primaryNav" data-nav>
         <a href="#work" data-i18n="nav.work">Work</a>
         <a href="#about" data-i18n="nav.about">About</a>
-        <a href="#skills" data-i18n="nav.skills">Skills</a>
-        <a href="https://github.com/LJY0317" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://github.com/LJY0317" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
         <a href="mailto:leejaeyup0317@gmail.com" data-i18n="nav.contact">Contact</a>
       </nav>
     </div>
   </header>
-
-  <main id="main">
-    <section id="top" class="hero">
-      <div class="container hero-copy">
-        <p class="eyebrow" data-i18n="home.hero.eyebrow">Software Engineer · Seoul</p>
-        <h1 data-i18n="home.hero.title">I build software across robotics, data, web, and mobile.</h1>
-        <p class="hero-lede" data-i18n="home.hero.lede">I connect components, test assumptions, trace failures, and make complex systems easier to verify and explain.</p>
-        <div class="hero-links">
-          <a href="#work"><span data-i18n="home.hero.workLink">View selected work</span> <span aria-hidden="true">↓</span></a>
-          <a href="mailto:leejaeyup0317@gmail.com"><span data-i18n="home.hero.emailLink">Email me</span> <span aria-hidden="true">↗</span></a>
+  <main id="main" class="studio-main">
+    <section id="top" class="container introduction">
+      <div class="introduction-copy">
+        <p class="micro-label" data-i18n="showcase.hero.kicker">SOFTWARE ENGINEER · PORTFOLIO</p>
+        <h1>Jaeyup Lee<span class="brand-point">.</span></h1>
+        <p class="intro-statement" data-i18n="showcase.hero.statement">From native macOS tools to interactive worlds.</p>
+        <div class="intro-actions">
+          <a href="#work" data-i18n="showcase.hero.browse">Explore projects <span aria-hidden="true">↘</span></a>
+          <a href="https://github.com/LJY0317" target="_blank" rel="noreferrer">GitHub ↗</a>
         </div>
       </div>
-
-      <div class="container hero-stage" aria-label="Areas of engineering work" data-i18n-aria-label="home.stage.aria">
-        <div class="stage-label stage-label-robotics" data-i18n="home.stage.robotics">Robotics</div>
-        <div class="stage-label stage-label-data" data-i18n="home.stage.data">Data</div>
-        <div class="stage-label stage-label-web" data-i18n="home.stage.web">Web</div>
-        <div class="stage-label stage-label-mobile" data-i18n="home.stage.mobile">Mobile</div>
-        <div class="stage-core">
-          <span data-i18n="home.stage.integration">Integration</span>
-          <strong data-i18n="home.stage.reliable">Reliable software</strong>
-          <small data-i18n="home.stage.detail">Validate · Debug · Observe</small>
+      <div class="cover-figure">
+        <video class="cover-video" data-loop-video autoplay muted playsinline loop preload="metadata" poster="/assets/media/pawpaw-workshop.webp" aria-label="Pawpaw Town gameplay showing a cat exploring a room">
+          <source src="/assets/media/pawpaw-workshop-loop.mp4" type="video/mp4">
+        </video>
+        <div class="cover-caption">
+          <span><small>FEATURED / UNITY</small><strong>Pawpaw Town</strong></span>
+          <a href="/projects/pawpaw-town/" aria-label="View Pawpaw Town case study">Explore <span aria-hidden="true">↗</span></a>
         </div>
-        <svg class="stage-lines" viewBox="0 0 1000 500" aria-hidden="true" preserveAspectRatio="none">
-          <path d="M220 110 C350 120 350 215 450 240"/>
-          <path d="M780 110 C650 120 650 215 550 240"/>
-          <path d="M220 390 C350 380 350 285 450 260"/>
-          <path d="M780 390 C650 380 650 285 550 260"/>
-        </svg>
+        <button class="motion-toggle" type="button" data-motion-toggle aria-label="Pause animation" title="Pause animation">Ⅱ</button>
       </div>
     </section>
 
-    <section id="work" class="section">
-      <div class="container section-heading centered">
-        <p class="eyebrow" data-i18n="home.work.eyebrow">Selected work</p>
-        <h2 data-i18n="home.work.title">Selected projects, with clear scope and evidence.</h2>
-        <p data-i18n="home.work.intro">Each case study distinguishes my contribution from the wider team product.</p>
+    <section id="work" class="container work-section">
+      <div class="section-bar">
+        <div><span class="micro-label" data-i18n="showcase.work.kicker">01 / INDEPENDENT WORK</span><h2 data-i18n="showcase.work.title">Selected projects</h2></div>
+        <span class="section-aside" data-i18n="showcase.work.aside">Built, tested, and documented.</span>
       </div>
-
-      <div class="container project-stack">
-        <article class="project-panel project-robotics">
-          <div class="project-copy">
-            <p class="project-meta" data-i18n="home.card.greenhouse.meta">Robotics & system integration · Six-person team · 2026</p>
-            <h3 data-i18n="home.card.greenhouse.title">Autonomous Greenhouse Robot</h3>
-            <p class="project-summary" data-i18n="home.card.greenhouse.summary">ROS 2 and Gazebo work across mapping, navigation, runtime integration, and operator feedback.</p>
-            <dl class="project-details">
-              <div><dt data-i18n="common.myFocus">My focus</dt><dd data-i18n="home.card.greenhouse.focus">Robot simulation, mapping experiments, navigation flows, and integration debugging.</dd></div>
-              <div><dt data-i18n="common.evidence">Evidence</dt><dd data-i18n="home.card.greenhouse.evidence">Gazebo and RViz captures, a system walkthrough, and a mapping debug recording.</dd></div>
-            </dl>
-            <div class="project-actions">
-              <a class="button-link" href="/projects/greenhouse-robot/"><span data-i18n="home.card.greenhouse.link">View case study</span> <span aria-hidden="true">→</span></a>
-            </div>
-          </div>
-          <figure class="project-visual project-image">
-            <img
-              src="/assets/images/projects/greenhouse-robot/gazebo-greenhouse-overview-960.webp"
-              srcset="/assets/images/projects/greenhouse-robot/gazebo-greenhouse-overview-960.webp 960w, /assets/images/projects/greenhouse-robot/gazebo-greenhouse-overview-1600.webp 1600w"
-              sizes="(max-width: 980px) calc(100vw - 40px), 48vw"
-              width="2816"
-              height="1733"
-              alt="Gazebo greenhouse simulation beside an RViz mapping view" data-i18n-alt="home.card.greenhouse.alt"
-              loading="lazy"
-              decoding="async"
-            >
-            <figcaption data-i18n="home.card.greenhouse.caption">Team simulation environment with the corresponding mapping view.</figcaption>
-          </figure>
+      <div class="work-grid">
+        <article class="work-tile">
+          <a class="work-thumb thumb-plura" href="/projects/plura-desktop/">
+            <img src="/assets/media/plura-dual.webp" loading="lazy" width="1440" height="836" alt="Two independent macOS ChatGPT windows, in light and dark appearance">
+            <span class="thumb-corner" aria-hidden="true">↗</span>
+          </a>
+          <div class="work-text"><span class="work-index">01 / macOS</span><h3><a href="/projects/plura-desktop/">Plura Desktop</a></h3><p data-i18n="showcase.plura.short">Independent ChatGPT Desktop profiles on one Mac.</p></div>
         </article>
-
-        <article class="project-panel project-data">
-          <div class="project-copy">
-            <p class="project-meta" data-i18n="home.card.etf.meta">Full-stack & data integration · Two-person team · 2025</p>
-            <h3 data-i18n="home.card.etf.title">ETF Data Platform</h3>
-            <p class="project-summary" data-i18n="home.card.etf.summary">A financial-data platform built around repeatable collection, search, filtering, rankings, and historical charts.</p>
-            <dl class="project-details">
-              <div><dt data-i18n="common.myFocus">My focus</dt><dd data-i18n="home.card.etf.focus">ETF data workflows, API integration, user-facing views, testing, and refactoring.</dd></div>
-              <div><dt data-i18n="common.evidence">Evidence</dt><dd data-i18n="home.card.etf.evidence">Implementation details documented in the repository; no public screenshots are available.</dd></div>
-            </dl>
-            <div class="project-actions">
-              <a class="button-link" href="/projects/etf-platform/"><span data-i18n="home.card.etf.link">View case study</span> <span aria-hidden="true">→</span></a>
-            </div>
+        <article class="work-tile">
+          <div class="work-thumb thumb-tela">
+            <video data-loop-video muted autoplay playsinline loop preload="none" poster="/assets/media/tela-control.webp" aria-label="Tela model-selection interface demonstration">
+              <source src="/assets/media/tela-model-loop.mp4" type="video/mp4">
+            </video>
+            <a class="thumb-corner" href="/projects/chatgpt-tela/" aria-label="View ChatGPT Tela project">↗</a>
+            <button class="motion-toggle" type="button" data-motion-toggle aria-label="Pause animation" title="Pause animation">Ⅱ</button>
           </div>
-          <div class="project-visual" role="img" aria-label="Data sources flowing into a Django data service and then into search, rankings, and charts" data-i18n-aria-label="home.card.etf.aria">
-            <div class="visual-caption" data-i18n="home.card.etf.pipeline">Data pipeline</div>
-            <div class="data-visual">
-              <div class="source-list"><span>PyKRX</span><span>YouTube API</span><span>Naver News</span></div>
-              <div class="pipeline-core"><small data-i18n="home.card.etf.collect">Collect · validate · deduplicate</small><strong data-i18n="home.card.etf.service">Django data layer</strong><span data-i18n="home.card.etf.records">Structured ETF records</span></div>
-              <div class="output-list"><span data-i18n="home.card.etf.search">Search</span><span data-i18n="home.card.etf.rankings">Rankings</span><span data-i18n="home.card.etf.charts">Charts</span></div>
-            </div>
-          </div>
+          <div class="work-text"><span class="work-index">02 / Developer tooling · pre-alpha</span><h3><a href="/projects/chatgpt-tela/">ChatGPT Tela</a></h3><p data-i18n="showcase.tela.short">Local Chat and Web/Codex connectivity for development workflows.</p></div>
         </article>
-
-        <article class="project-panel project-web">
-          <div class="project-copy">
-            <p class="project-meta" data-i18n="home.card.study.meta">Frontend integration · Six-person team · 2026</p>
-            <h3 data-i18n="home.card.study.title">Study Matching Platform</h3>
-            <p class="project-summary" data-i18n="home.card.study.summary">Targeted React and TypeScript fixes that restored the build and corrected API and environment assumptions.</p>
-            <dl class="project-details">
-              <div><dt data-i18n="common.myFocus">My focus</dt><dd data-i18n="home.card.study.focus">Build fixes, stale-code removal, response-shape corrections, and Vite configuration.</dd></div>
-              <div><dt data-i18n="common.evidence">Evidence</dt><dd data-i18n="home.card.study.evidence">A privacy-safe product screen and an engineering note on the corrected integration path.</dd></div>
-            </dl>
-            <div class="project-actions">
-              <a class="button-link" href="/projects/study-platform/"><span data-i18n="home.card.study.link">View engineering note</span> <span aria-hidden="true">→</span></a>
-            </div>
-          </div>
-          <figure class="project-visual project-image">
-            <img
-              src="/assets/images/projects/study-platform/study-discovery-grid-960.webp"
-              srcset="/assets/images/projects/study-platform/study-discovery-grid-960.webp 960w, /assets/images/projects/study-platform/study-discovery-grid-1600.webp 1600w"
-              sizes="(max-width: 980px) calc(100vw - 40px), 48vw"
-              width="3220"
-              height="1800"
-              alt="Togethy study discovery grid with six sample study cards" data-i18n-alt="home.card.study.alt"
-              loading="lazy"
-              decoding="async"
-            >
-            <figcaption data-i18n="home.card.study.caption">Privacy-safe crop of the team product interface.</figcaption>
-          </figure>
+        <article class="work-tile">
+          <a class="work-thumb thumb-photo" href="/projects/photoarchivekit/">
+            <img src="/assets/media/photo-folders.webp" loading="lazy" width="1120" height="872" alt="PhotoArchiveKit native macOS folder management screen with redacted paths">
+            <span class="thumb-corner" aria-hidden="true">↗</span>
+          </a>
+          <div class="work-text"><span class="work-index">03 / Swift · macOS</span><h3><a href="/projects/photoarchivekit/">PhotoArchiveKit</a></h3><p data-i18n="showcase.photo.short">Review duplicates, preserve Live Photos, and reverse cleanup.</p></div>
         </article>
-
-        <article class="project-panel project-mobile">
-          <div class="project-copy">
-            <p class="project-meta" data-i18n="home.card.dayori.meta">Full-stack timetable import · Six-person team · 2026</p>
-            <h3 data-i18n="home.card.dayori.title">Dayori Student Planner</h3>
-            <p class="project-summary" data-i18n="home.card.dayori.summary">A cross-platform student planner with two timetable import methods and a review step before saving structured schedule data.</p>
-            <dl class="project-details">
-              <div><dt data-i18n="common.myFocus">My focus</dt><dd data-i18n="home.card.dayori.focus">Shared UI tokens, responsive UX, timetable OCR, Everytime import, and supporting backend APIs.</dd></div>
-              <div><dt data-i18n="common.evidence">Evidence</dt><dd data-i18n="home.card.dayori.evidence">Import screens, timetable results, wider product views, and selected interaction recordings.</dd></div>
-            </dl>
-            <div class="project-actions">
-              <a class="button-link" href="/projects/timetable-planner/"><span data-i18n="home.card.dayori.link">View case study</span> <span aria-hidden="true">→</span></a>
-            </div>
+        <article class="work-tile">
+          <div class="work-thumb thumb-pawpaw">
+            <video data-loop-video muted autoplay playsinline loop preload="none" poster="/assets/media/pawpaw-workshop-2.webp" aria-label="Pawpaw Town gameplay in another room">
+              <source src="/assets/media/pawpaw-kitchen-loop.mp4" type="video/mp4">
+            </video>
+            <a class="thumb-corner" href="/projects/pawpaw-town/" aria-label="View Pawpaw Town project">↗</a>
+            <button class="motion-toggle" type="button" data-motion-toggle aria-label="Pause animation" title="Pause animation">Ⅱ</button>
           </div>
-          <figure class="project-visual project-image">
-            <img
-              src="/assets/images/projects/timetable-planner/dayori-cover-960.webp"
-              srcset="/assets/images/projects/timetable-planner/dayori-cover-960.webp 960w, /assets/images/projects/timetable-planner/dayori-cover-1600.webp 1600w"
-              sizes="(max-width: 980px) calc(100vw - 40px), 48vw"
-              width="1920"
-              height="1080"
-              alt="Dayori project cover presenting calendar, gallery, and handwritten-note screens" data-i18n-alt="home.card.dayori.alt"
-              loading="lazy"
-              decoding="async"
-            >
-            <figcaption data-i18n="home.card.dayori.caption">Dayori team product overview; my contribution is detailed in the case study.</figcaption>
-          </figure>
+          <div class="work-text"><span class="work-index">04 / Unity · Game prototype</span><h3><a href="/projects/pawpaw-town/">Pawpaw Town</a></h3><p data-i18n="showcase.pawpaw.short">A tiny cat, tactile objects, and room-by-room challenges.</p></div>
         </article>
       </div>
     </section>
 
-    <section id="about" class="section about-section">
-      <div class="container two-column">
-        <div><p class="eyebrow" data-i18n="home.about.eyebrow">About</p><h2 data-i18n="home.about.title">I work across system boundaries.</h2></div>
-        <div class="body-copy">
-          <p data-i18n="home.about.education">At SSAFY, I completed project-based software engineering training across web, mobile, and robotics.</p>
-          <p data-i18n="home.about.work">Across team projects, I have connected robot runtimes, backend services, frontend applications, data pipelines, and mobile clients.</p>
+    <section class="team-section">
+      <div class="container">
+        <div class="section-bar">
+          <div><span class="micro-label" data-i18n="showcase.team.kicker">02 / SSAFY · TEAM PROJECTS</span><h2 data-i18n="showcase.team.title">Collaborative work</h2></div>
+          <span class="section-aside" data-i18n="showcase.team.aside">Individual contributions noted in each case study.</span>
+        </div>
+        <div class="team-grid">
+          <article class="team-card">
+            <a class="team-visual" href="/projects/greenhouse-robot/"><img src="/assets/images/projects/greenhouse-robot/gazebo-greenhouse-overview-960.webp" loading="lazy" width="960" height="591" alt="Gazebo greenhouse simulation and ROS mapping tools"></a>
+            <div class="team-copy"><span class="work-index">Robotics / ROS 2</span><h3><a href="/projects/greenhouse-robot/">AgriBot <span aria-hidden="true">↗</span></a></h3><p data-i18n="showcase.agribot.short">Navigation, simulation, and runtime integration.</p></div>
+          </article>
+          <article class="team-card">
+            <a class="team-visual" href="/projects/timetable-planner/"><img src="/assets/images/projects/timetable-planner/dayori-cover-960.webp" loading="lazy" width="960" height="540" alt="Dayori student planner home, calendar and note interface"></a>
+            <div class="team-copy"><span class="work-index">Mobile / Flutter</span><h3><a href="/projects/timetable-planner/">Dayori <span aria-hidden="true">↗</span></a></h3><p data-i18n="showcase.dayori.short">Timetable import, OCR, and review before saving.</p></div>
+          </article>
+          <article class="team-card">
+            <a class="team-visual" href="/projects/study-platform/"><img src="/assets/images/projects/study-platform/study-discovery-grid-960.webp" loading="lazy" width="960" height="537" alt="Togethy study discovery cards"></a>
+            <div class="team-copy"><span class="work-index">Web / Spring & React</span><h3><a href="/projects/study-platform/">Togethy <span aria-hidden="true">↗</span></a></h3><p data-i18n="showcase.togethy.short">Frontend build and API integration fixes.</p></div>
+          </article>
+          <article class="team-card team-text-only">
+            <a class="team-visual team-graphic" href="/projects/etf-platform/" aria-label="Open MOUDA project"><strong>MOUDA</strong><small>ETF / DATA PLATFORM</small></a>
+            <div class="team-copy"><span class="work-index">Finance / Django & Vue</span><h3><a href="/projects/etf-platform/">MOUDA <span aria-hidden="true">↗</span></a></h3><p data-i18n="showcase.mouda.short">Market data pipelines, ETF views, and charts.</p></div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="skills" class="section">
-      <div class="container section-heading"><p class="eyebrow" data-i18n="home.skills.eyebrow">Skills</p><h2 data-i18n="home.skills.title">Technologies I have used across these projects.</h2></div>
-      <div class="container skill-table">
-        <div><h3 data-i18n="home.skills.languages">Languages</h3><p>Python, Java, JavaScript / TypeScript, Dart</p></div>
-        <div><h3 data-i18n="home.skills.frontend">Frontend & mobile</h3><p data-i18n="home.skills.frontendList">React, Flutter, Vue.js, responsive UI development</p></div>
-        <div><h3 data-i18n="home.skills.backend">Backend & integration</h3><p data-i18n="home.skills.backendList">Spring Boot, Django, Django REST Framework, REST and HTTP APIs, XML parsing</p></div>
-        <div><h3 data-i18n="home.skills.robotics">Robotics & imaging</h3><p>ROS 2, Gazebo, Nav2, SLAM Toolbox, RViz, ML Kit, OpenCV</p></div>
+    <section class="container more-section">
+      <div class="section-bar compact">
+        <div><span class="micro-label" data-i18n="showcase.more.kicker">03 / OTHER WORK</span><h2 data-i18n="showcase.more.title">More on GitHub</h2></div>
+      </div>
+      <div class="more-list">
+        <a href="https://github.com/LJY0317/ChatGPT-Plura-A-multi-profile-client" target="_blank" rel="noreferrer"><strong>Plura Mobile</strong><span data-i18n="showcase.more.mobile">iOS client for remote desktop profiles</span><span aria-hidden="true">↗</span></a>
+        <a href="https://github.com/LJY0317/ClipBox" target="_blank" rel="noreferrer"><strong>ClipBox</strong><span data-i18n="showcase.more.clipbox">Native media downloads and archive history</span><span aria-hidden="true">↗</span></a>
+        <a href="https://github.com/LJY0317/DocsMargin" target="_blank" rel="noreferrer"><strong>DocsMargin</strong><span data-i18n="showcase.more.docs">Markdown review margins for codebases</span><span aria-hidden="true">↗</span></a>
+        <a href="https://github.com/LJY0317/MacLagMonitor" target="_blank" rel="noreferrer"><strong>MacLagMonitor</strong><span data-i18n="showcase.more.lag">Lightweight diagnostics for macOS performance</span><span aria-hidden="true">↗</span></a>
       </div>
     </section>
 
-    <section class="section education-section">
-      <div class="container education-grid">
-        <div><p class="eyebrow" data-i18n="home.education.eyebrow">Training</p><h2 data-i18n="home.education.title">Project-based software engineering training.</h2></div>
-        <div class="education-list">
-          <article><time data-i18n="home.education.ssafyType">Software engineering programme</time><h3 data-i18n="home.education.ssafyName">Samsung Software Academy For Youth</h3><p data-i18n="home.education.ssafyDetail">Hands-on training in algorithms, web, mobile, robotics, and collaborative development.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact-section" id="contact">
-      <div class="container contact-inner">
-        <p class="eyebrow" data-i18n="home.contact.eyebrow">Contact</p>
-        <h2 data-i18n="home.contact.title">Open to software engineering roles.</h2>
-        <div class="contact-links">
-          <a href="mailto:leejaeyup0317@gmail.com" data-i18n="common.email">Email</a>
-          <a href="https://github.com/LJY0317" target="_blank" rel="noreferrer">GitHub</a>
-        </div>
+    <section id="about" class="about-minimal">
+      <div class="container about-line">
+        <span class="micro-label" data-i18n="showcase.about.kicker">A LITTLE ABOUT ME</span>
+        <p data-i18n="showcase.about.text">I work across native apps, backend services, and interactive systems. I care about the details that make software usable beyond a demo.</p>
+        <div class="about-links"><a href="https://github.com/LJY0317" target="_blank" rel="noreferrer">GitHub ↗</a><a href="mailto:leejaeyup0317@gmail.com" data-i18n="showcase.about.email">Get in touch ↗</a></div>
       </div>
     </section>
   </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© <span data-year></span> Jaeyup Lee</p>
-      <p data-i18n="home.footer.note">A lightweight static portfolio.</p>
-    </div>
+  <footer class="site-footer studio-footer">
+    <div class="container footer-inner"><span>© <span data-year></span> Jaeyup Lee</span><a href="#top" data-i18n="showcase.footer.top">Back to top ↑</a></div>
   </footer>
 </body>
 </html>

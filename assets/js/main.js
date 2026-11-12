@@ -314,7 +314,13 @@ const koTranslations = {
   'dayori.footer.note': '팀 제품의 맥락과 제 기여를 구분해 표시했습니다.'
 };
 
+Object.assign(koTranslations, {"showcase.hero.kicker": "소프트웨어 엔지니어 · 포트폴리오", "showcase.hero.statement": "macOS 도구부터 작은 인터랙티브 세계까지.", "showcase.hero.browse": "프로젝트 둘러보기 ↘", "showcase.work.kicker": "01 / 개인 프로젝트", "showcase.work.title": "주요 프로젝트", "showcase.work.aside": "구현과 사용 모습을 직접 보여줍니다.", "showcase.plura.short": "하나의 Mac에서 여러 ChatGPT Desktop 프로필을 독립적으로 실행합니다.", "showcase.tela.short": "개발을 위한 로컬 Chat 및 Web/Codex 연결 도구.", "showcase.photo.short": "사진 중복 검토와 Live Photo 보존, 복구 가능한 정리.", "showcase.pawpaw.short": "작은 고양이와 물리 오브젝트, 방마다 다른 도전.", "showcase.team.kicker": "02 / SSAFY 팀 프로젝트", "showcase.team.title": "팀 프로젝트", "showcase.team.aside": "상세 페이지에서 개인 기여를 구분했습니다.", "showcase.agribot.short": "로봇 주행, 시뮬레이션, 런타임 통합.", "showcase.dayori.short": "시간표 OCR·가져오기와 저장 전 확인.", "showcase.togethy.short": "프론트엔드 빌드 및 API 통합 오류 수정.", "showcase.mouda.short": "ETF 데이터 파이프라인, 조회 화면과 차트.", "showcase.more.kicker": "03 / 그 밖의 작업", "showcase.more.title": "GitHub의 다른 프로젝트", "showcase.more.mobile": "데스크톱 프로필과 연결하는 iOS 클라이언트", "showcase.more.clipbox": "네이티브 미디어 다운로드와 기록 관리", "showcase.more.docs": "코드베이스의 Markdown 문서 검토 도구", "showcase.more.lag": "macOS 성능 진단 유틸리티", "showcase.about.kicker": "소개", "showcase.about.text": "네이티브 앱부터 백엔드 서비스, 인터랙티브 시스템까지 개발합니다. 데모 이후에도 실제로 쓸 수 있는 소프트웨어를 지향합니다.", "showcase.about.email": "이메일 보내기 ↗", "showcase.footer.top": "맨 위로 ↑", "showcase.detail.back": "← 전체 프로젝트", "showcase.detail.all": "← 전체 프로젝트 보기", "detail.plura-desktop.subtitle": "한 대의 Mac에서 여러 개의 독립적인 ChatGPT Desktop 프로필.", "detail.plura-desktop.desc": "각각 다른 설정으로 ChatGPT Desktop 창을 실행하고 관리하는 프로필 도구입니다.", "detail.plura-desktop.bullet1": "별도 ChatGPT Desktop 프로필 앱 생성 및 관리.", "detail.plura-desktop.bullet2": "공식 앱과 기본 프로필을 그대로 유지.", "detail.plura-desktop.bullet3": "상태·수명주기 명령과 Homebrew 설치 경로 제공.", "detail.plura-desktop.note": "두 개의 데스크톱 창이 보이는 실제 캡처입니다. 창 내부의 UI는 ChatGPT 제품이며 Plura가 담당하는 부분은 프로필의 생성·수명주기 관리입니다.", "detail.chatgpt-tela.subtitle": "Chat과 Work/Codex를 통해 로컬 개발 작업을 연결합니다.", "detail.chatgpt-tela.desc": "로컬 개발 도구, 네이티브 ChatGPT, 웹 모델 턴을 연결하는 브리지입니다.", "detail.chatgpt-tela.bullet1": "허용된 로컬 작업공간에서 Chat 기능 호출.", "detail.chatgpt-tela.bullet2": "웹 턴에서 네이티브 도구로 이어지는 Work/Codex 연결 경로.", "detail.chatgpt-tela.bullet3": "연결 상태를 관리하는 macOS 메뉴 막대 컨트롤 센터.", "detail.chatgpt-tela.note": "프리알파 단계입니다. 저장소 README에서 구현이 확인된 연결 기능과 추후 목표를 구분합니다.", "detail.photoarchivekit.subtitle": "사진 보관함의 중복 파일을 더 안전하게 검토하고 정리합니다.", "detail.photoarchivekit.desc": "정확히 일치하는 중복 파일을 검토하고, Live Photo를 보호하며, 정리를 되돌릴 수 있는 네이티브 앱입니다.", "detail.photoarchivekit.bullet1": "여러 로컬 폴더를 스캔하고 정확한 중복 파일을 그룹화.", "detail.photoarchivekit.bullet2": "SwiftUI 비교 화면을 통한 사람 중심 검토.", "detail.photoarchivekit.bullet3": "휴지통·격리 이동과 검증된 복구 지원.", "detail.photoarchivekit.note": "스캔 자체는 파일을 삭제하지 않습니다. 자동 베스트샷 선택 및 운영용 클라우드 동기화는 구현된 기능으로 표시하지 않습니다.", "detail.pawpaw-town.subtitle": "호기심 많은 고양이를 위한 작은 세계.", "detail.pawpaw-town.desc": "방마다 다양한 오브젝트와 짧은 도전 과제가 있는 Unity 프로토타입입니다.", "detail.pawpaw-town.bullet1": "가구와 상호작용 오브젝트가 놓인 아이소메트릭 공간.", "detail.pawpaw-town.bullet2": "고양이 이동, 점프, 물체와의 상호작용.", "detail.pawpaw-town.bullet3": "실제 플레이로 확인할 수 있는 방별 과제.", "detail.pawpaw-town.note": "컨셉 렌더가 아니라 실제 프로토타입에서 녹화한 플레이 영상입니다."});
+
 const koMetadata = {
+  'pawpaw-town': { title: 'Pawpaw Town — 이재엽', description: '고양이와 인터랙티브 오브젝트가 등장하는 Unity 프로토타입.' },
+  'photoarchivekit': { title: 'PhotoArchiveKit — 이재엽', description: '사진 중복 검토와 되돌릴 수 있는 정리를 지원하는 macOS 앱.' },
+  'chatgpt-tela': { title: 'ChatGPT Tela — 이재엽', description: 'Chat과 Work/Codex 연결을 위한 개발 도구. 프리알파.' },
+  'plura-desktop': { title: 'Plura Desktop — 이재엽', description: '여러 ChatGPT 데스크톱 프로필을 독립적으로 관리하는 macOS 도구.' },
   home: {
     title: '이재엽 — 소프트웨어 엔지니어',
     description: '로보틱스, 백엔드 통합, 데이터 시스템, 웹과 모바일 프로젝트를 소개하는 소프트웨어 엔지니어 이재엽의 포트폴리오입니다.'
@@ -480,7 +486,7 @@ languageControl.addEventListener('click', (event) => {
   if (button) applyLanguage(button.dataset.language);
 });
 
-let preferredLanguage = 'en';
+let preferredLanguage = /^ko\b/i.test(navigator.language) ? 'ko' : 'en';
 try {
   preferredLanguage = localStorage.getItem('portfolio-language') || 'en';
 } catch (error) {
