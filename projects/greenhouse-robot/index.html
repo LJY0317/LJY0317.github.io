@@ -38,15 +38,15 @@
         <nav class="project-breadcrumbs" aria-label="Breadcrumb" data-i18n-aria-label="a11y.breadcrumb"><a href="/" data-i18n="common.portfolio">Portfolio</a><span aria-hidden="true">/</span><span data-i18n="greenhouse.breadcrumb">Greenhouse robot</span></nav>
         <div class="project-hero-grid">
           <div>
-            <p class="project-kicker" data-i18n="greenhouse.hero.kicker">Robotics & system integration · Team project</p>
+            <p class="project-kicker" data-i18n="greenhouse.hero.kicker">Smart-farm robotics · Team project</p>
             <h1 data-i18n="greenhouse.hero.title">Autonomous Greenhouse Robot</h1>
-            <p class="project-deck" data-i18n="greenhouse.hero.deck">I worked on Gazebo simulation, ROS 2 mapping and navigation, and debugging issues between the robot and operator interface.</p>
+            <p class="project-deck" data-i18n="greenhouse.hero.deck">A greenhouse robot system that navigates toward selected plants for inspection and harvesting tasks. I worked on mapping, route behavior, and integration debugging.</p>
             <div class="hero-actions"><a class="button-link" href="#evidence" data-i18n="greenhouse.hero.evidenceLink">Demo videos</a><a class="button-link secondary" href="#responsibility" data-i18n="greenhouse.hero.responsibilityLink">My work</a></div>
           </div>
           <figure class="media-frame hero-media">
             <img data-media src="/assets/images/projects/greenhouse-robot/gazebo-greenhouse-overview-960.webp" srcset="/assets/images/projects/greenhouse-robot/gazebo-greenhouse-overview-960.webp 960w, /assets/images/projects/greenhouse-robot/gazebo-greenhouse-overview-1600.webp 1600w" sizes="(max-width: 980px) calc(100vw - 40px), 55vw" width="2816" height="1733" alt="Gazebo greenhouse simulation showing the robot environment beside an RViz mapping view" data-i18n-alt="greenhouse.hero.alt" loading="eager" decoding="async" fetchpriority="high">
             <div class="media-fallback" data-i18n="greenhouse.hero.fallback">Greenhouse overview image is unavailable.</div>
-            <figcaption data-i18n="greenhouse.hero.caption">Greenhouse simulation and mapping view from the team project.</figcaption>
+            <figcaption data-i18n="greenhouse.hero.caption">Greenhouse simulation and mapping viewed side by side.</figcaption>
           </figure>
         </div>
       </div>
@@ -63,9 +63,9 @@
 
     <section class="case-section surface">
       <div class="container case-grid">
-        <div class="case-heading"><p class="eyebrow" data-i18n="common.context">Context</p><h2 data-i18n="common.teamBuilt">What the team built</h2></div>
+        <div class="case-heading"><p class="eyebrow" data-i18n="common.context">Context</p><h2 data-i18n="common.teamBuilt">How the service works</h2></div>
         <div class="case-body">
-          <p data-i18n="greenhouse.context.body">A team-built greenhouse robot using ROS 2, FastAPI, and a React operator interface. The system covers patrol, plant diagnosis, harvesting, and monitoring.</p>
+          <p data-i18n="greenhouse.context.body">We built a robot system for greenhouse patrols and plant checks, including diagnosis and harvesting flows. The robot side runs on ROS 2; a server and dashboard display tasks and their progress.</p><p data-i18n="greenhouse.context.journey">An operator chooses a plant or a task from the dashboard. In the Gazebo greenhouse, the robot navigates the mapped aisles while the interface shows its progress. This let us test the full route without a physical greenhouse.</p>
 
           <div class="workflow" aria-label="High-level system flow" data-i18n-aria-label="greenhouse.context.workflowAria"><div data-i18n="greenhouse.context.sensors">Sensors & simulation</div><div data-i18n="greenhouse.context.runtime">ROS 2 runtime</div><div data-i18n="greenhouse.context.mapping">Mapping & navigation</div><div data-i18n="greenhouse.context.backend">Backend integration</div><div data-i18n="greenhouse.context.feedback">Operator feedback</div></div>
         </div>
@@ -76,7 +76,7 @@
       <div class="container case-grid">
         <div class="case-heading"><p class="eyebrow" data-i18n="common.responsibility">Responsibility</p><h2 data-i18n="common.myWork">What I worked on</h2></div>
         <div class="case-body">
-          <p data-i18n="greenhouse.responsibility.intro">I ran mapping experiments in Gazebo, checked navigation behavior, and debugged ROS 2 state issues across RViz and the operator interface.</p>
+          <p data-i18n="greenhouse.responsibility.intro">I ran mapping experiments in Gazebo, checked navigation behavior, and debugged ROS 2 state issues across RViz and the operator interface.</p><p data-i18n="greenhouse.responsibility.experiment">I also tried moving the final goal closer to a selected plant. Gazebo runs revealed detours and collision warnings, so I reverted the change and then fixed stale robot-position data and the starting-waypoint choice. Those changes are documented in my commits.</p>
           <h3 data-i18n="common.problem">Problem</h3>
           <p data-i18n="greenhouse.responsibility.problem">Nodes can start successfully while timing, TF, odometry, or localization is still wrong. I compared Gazebo and RViz to narrow down the problems.</p>
           <h3 data-i18n="common.action">Action</h3>
@@ -86,7 +86,7 @@
             <li data-i18n="greenhouse.responsibility.action3">Connected navigation flows with operator state instead of treating each component as an isolated demo.</li>
           </ul>
           <h3 data-i18n="common.result">Result</h3>
-          <p data-i18n="greenhouse.responsibility.result">The repository includes a full team demo of navigation, diagnosis, and harvesting. The mapping experiments and debugging clips show my own work.</p>
+          <p data-i18n="greenhouse.responsibility.result">The project demo shows navigation, diagnosis, and harvesting together. The mapping and debugging recordings show how I tested the route and traced integration issues.</p>
         </div>
       </div>
     </section>
@@ -129,7 +129,7 @@
 
     <section class="case-section">
       <div class="container case-grid">
-        <div class="case-heading"><p class="eyebrow" data-i18n="greenhouse.system.eyebrow">Wider system</p><h2 data-i18n="greenhouse.system.title">Team interface</h2></div>
+        <div class="case-heading"><p class="eyebrow" data-i18n="greenhouse.system.eyebrow">Wider system</p><h2 data-i18n="greenhouse.system.title">Robot control and plant check screens</h2></div>
         <div class="case-body">
           <div class="evidence-grid">
             <figure class="media-frame"><img data-media src="/assets/images/projects/greenhouse-robot/operator-dashboard-tablet-960.webp" srcset="/assets/images/projects/greenhouse-robot/operator-dashboard-tablet-960.webp 960w, /assets/images/projects/greenhouse-robot/operator-dashboard-tablet-1600.webp 1600w" sizes="(max-width: 720px) calc(100vw - 40px), 50vw" width="3478" height="2371" alt="Tablet-sized team control interface for the greenhouse robot system" data-i18n-alt="greenhouse.system.tabletAlt" loading="lazy" decoding="async"><div class="media-fallback" data-i18n="greenhouse.system.tabletFallback">Tablet dashboard image is unavailable.</div><figcaption data-i18n="greenhouse.system.tabletCaption">Tablet-sized team control interface.</figcaption></figure>

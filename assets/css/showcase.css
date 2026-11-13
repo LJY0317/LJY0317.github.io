@@ -134,6 +134,10 @@ body.studio{background:#fdfdfb;color:var(--studio-ink);font-family:-apple-system
 .detail-intro ul{margin:0;padding:0;list-style:none;border-top:1px solid var(--studio-line)}
 .detail-intro li{padding:12px 0 12px 18px;border-bottom:1px solid var(--studio-line);font-size:14px;color:#5c665e;position:relative}
 .detail-intro li::before{content:"—";position:absolute;left:0;color:#87948a}
+.detail-story{display:grid;grid-template-columns:minmax(200px,.72fr) minmax(0,1.28fr);gap:60px;border-top:1px solid var(--studio-line);padding:43px 0 64px}
+.detail-story-heading h2{font-size:clamp(24px,2.7vw,34px);font-weight:650;letter-spacing:-.045em;line-height:1.25;margin:10px 0 0;max-width:360px}
+.detail-story-body p{color:#424d46;font-size:16px;line-height:1.82;letter-spacing:-.012em;margin:0 0 18px;max-width:690px;word-break:keep-all}
+.detail-story-body p:last-child{margin-bottom:0}
 .detail-evidence{border-top:1px solid var(--studio-line);padding-top:47px}
 .detail-evidence .section-bar{margin-bottom:27px}
 .detail-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
@@ -146,7 +150,7 @@ body.studio{background:#fdfdfb;color:var(--studio-ink);font-family:-apple-system
 .detail-note{font-size:12px;line-height:1.6;color:#727971;max-width:780px;margin:27px 0 0}
 .detail-next{border-top:1px solid var(--studio-line);margin-top:74px;padding-top:24px;display:flex;justify-content:space-between;gap:20px}
 .detail-next a{font-size:13px;font-weight:650;color:var(--studio-accent)}
-@media(max-width:760px){.detail-head{align-items:start;flex-direction:column;gap:14px;padding:38px 0 25px}.detail-head h1{font-size:41px}.detail-intro{grid-template-columns:1fr;gap:25px;padding:30px 0 48px}.detail-gallery{grid-template-columns:1fr}.detail-gallery-item:first-child:nth-last-child(1){grid-column:auto}.detail-main{padding-bottom:65px}}
+@media(max-width:760px){.detail-head{align-items:start;flex-direction:column;gap:14px;padding:38px 0 25px}.detail-head h1{font-size:41px}.detail-intro{grid-template-columns:1fr;gap:25px;padding:30px 0 42px}.detail-story{grid-template-columns:1fr;gap:18px;padding:32px 0 42px}.detail-story-heading h2{font-size:27px}.detail-story-body p{font-size:15px;line-height:1.75}.detail-gallery{grid-template-columns:1fr}.detail-gallery-item:first-child:nth-last-child(1){grid-column:auto}.detail-main{padding-bottom:65px}}
 /* Existing SSAFY case studies: preserve technical evidence, moderate the visual scale. */
 .studio.legacy-case .project-hero{padding:55px 0 37px}
 .studio.legacy-case .project-hero h1{font-size:clamp(35px,4.5vw,62px);letter-spacing:-.046em;line-height:1.08}
