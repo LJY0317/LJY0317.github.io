@@ -4,8 +4,8 @@ This repository publishes Lee Jaeyup's personal and team project portfolio as st
 
 ## Layout
 - Use a pure white background (#ffffff), dark text, and a single readable column on every viewport.
-- Keep the format close to an ordinary document: modest headings, continuous paragraphs, real screenshots and recordings. Do not restore the old asymmetric grids, tinted panels, decorative labels, oversized hero text, or marketing cards.
-- Project names are headings. Subheadings describe the actual work, such as navigation recovery or timetable OCR. Do not use dramatic incident headlines or slogans.
+- Keep body text in one readable column, but use deliberate typography, compact navigation, generous media, and a clear visual hierarchy. The user wants a polished product portfolio rather than unstyled document HTML. Keep the page white; avoid decorative panels, marketing cards, and oversized slogans. Media frames and concise project navigation are useful when they aid browsing.
+- Keep only one personal name in the home header; use a content title below it. Project names are headings. Subheadings describe the actual work, such as navigation recovery or timetable OCR. Do not use dramatic incident headlines or slogans.
 - Korean body paragraphs may be justified; keep captions and navigation simple. Check mobile line breaks and overflow.
 
 ## Content
