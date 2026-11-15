@@ -2,22 +2,22 @@
 
 Source for https://ljy0317.github.io/.
 
-A static, image-led portfolio of personal software projects and SSAFY team work. The home page introduces the work briefly; individual project pages link to code and distinguish team context from personal contribution.
+A static portfolio for personal software and SSAFY team projects. The home page is a short, media-led index. Each project page has genuine screenshots or recordings, what was built, and the failures and fixes that can be supported by project history.
 
 ## Structure
 
-- index.html — project index and introduction
-- projects/ — individual project pages (including four SSAFY case studies)
-- assets/media/ — privacy-reviewed stills and silent looping MP4 excerpts
-- assets/images/projects/, assets/videos/projects/ — published SSAFY media
-- assets/css/showcase.css, assets/js/showcase.js — product-showcase layout and video playback
-- assets/css/base.css, assets/css/project.css, assets/js/main.js — shared styles, case layouts, navigation and Korean/English switching
-- AGENTS.md — editorial, visual and media principles
+- index.html — project index and background
+- projects/ — eight project articles
+- assets/media/ — silent, short recordings and posters for personal projects
+- assets/images/projects/ and assets/videos/projects/ — screenshots and videos from team work
+- assets/css/site.css — layout and responsive styles
+- assets/js/site.js — Korean/English switching, reduced-motion-aware viewport video playback
+- AGENTS.md — editing and attribution conventions
 
-## Publishing
+## Preview and publishing
 
-GitHub Pages serves main at /. No framework or build step.
+No build step. Run python3 -m http.server 8080 in this directory to preview.
 
-For a local preview, run: python3 -m http.server 8080
+GitHub Pages serves main from /. Scroll into a video to play it silently on a loop; scroll away or use its pause control to stop it. Reduced-motion settings keep videos paused until the visitor presses play.
 
-Ambient video pauses when offscreen and honors reduced motion. Public screenshots are derived from original captures; those originals are preserved privately on Google Drive.
+Keep private original captures outside this repository. Only publish selected, reviewed image and video excerpts.
