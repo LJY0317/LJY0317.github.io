@@ -1,23 +1,20 @@
-# Jaeyup Lee — Portfolio
+# Jaeyup Lee's portfolio
 
-Source for https://ljy0317.github.io/.
+A static Korean/English portfolio at https://ljy0317.github.io/.
 
-A static portfolio for personal software and SSAFY team projects. The home page is a short, media-led index. Each project page has genuine screenshots or recordings, what was built, and the failures and fixes that can be supported by project history.
+The home page lists personal and team projects. Each project page explains the product, my role, and specific fixes, alongside actual screenshots, recordings, and public code links.
 
-## Structure
+## Preview
 
-- index.html — project index and background
-- projects/ — eight project articles
-- assets/media/ — silent, short recordings and posters for personal projects
-- assets/images/projects/ and assets/videos/projects/ — screenshots and videos from team work
-- assets/css/site.css — layout and responsive styles
-- assets/js/site.js — Korean/English switching, reduced-motion-aware viewport video playback
-- AGENTS.md — editing and attribution conventions
+Run `python3 -m http.server 8080` in the repository directory. There is no build step. GitHub Pages publishes the root of `main`.
 
-## Preview and publishing
+## Files
 
-No build step. Run python3 -m http.server 8080 in this directory to preview.
+- `index.html`: project index and background
+- `projects/`: eight project pages
+- `assets/css/site.css`: white, single-column document layout
+- `assets/js/site.js`: language switch and viewport video playback
+- `assets/media/`, `assets/images/`, `assets/videos/`: project captures
+- `AGENTS.md`: editing guidance
 
-GitHub Pages serves main from /. Scroll into a video to play it silently on a loop; scroll away or use its pause control to stop it. Reduced-motion settings keep videos paused until the visitor presses play.
-
-Keep private original captures outside this repository. Only publish selected, reviewed image and video excerpts.
+Videos play silently when visible and stop when offscreen or the tab is hidden. The pause button and reduced-motion preference are respected. Keep original private captures outside this repository.
